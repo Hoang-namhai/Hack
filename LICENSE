@@ -1,4 +1,4 @@
-Password = '113'
+Password = '789'
 PS = gg.prompt({'✧〖๑𝑽𝒖𝒊 𝑳𝒐̀𝒏𝒈 𝑵𝒉𝒂̣̂𝒑 𝑲𝒆𝒚๑...〗✧'},{[1]=''},{[1]='number'})
 if not PS then os.exit() end
 if PS[1] == Password then
