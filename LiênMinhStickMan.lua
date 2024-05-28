@@ -23,12 +23,12 @@ gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.clearResults()
 if input == nil then
-HNH = "☛☚;-163718D;-163718D:25"
+HNH = "☛☚;-163721D;-163721D:25"
 else
 HNH = input[1]
 end
 input = gg.prompt(
-{"🔰Nhập Số HP🔰:"},
+{"🔰Nhập Giá Trị Hack🔰:"},
 {HNH},  
 {"number"})
 if input and input[1] then
@@ -49,12 +49,12 @@ gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.clearResults()
 if HVH == nil then
-HNHH = "☞☜;-163718D;-163718D:25"
+HNHH = "☞☜;-163721D;-163721D:25"
 else
 HNHH = HVH[1]
 end
 HVH = gg.prompt(
-{"🔰Nhập Số Damage🔰:"},
+{"🔰Nhập Giá Trị Hack🔰:"},
 {HNHH},  
 {"number"})
 if HVH and HVH[1] then
