@@ -1,5 +1,5 @@
 function Main()
-local﻿ menu = gg.alert('❤𝒀𝒐𝒖𝒕𝒖𝒃𝒆 :: 𝑯𝒂̉𝒊 𝑺𝒄𝒓𝒊𝒑𝒕🍀 𝒗𝒆𝒓𝒔𝒊𝒐𝒏 𝟏.𝟎.𝟎.\
+local﻿ menu = gg.alert('❤𝒀𝒐𝒖𝒕𝒖𝒃𝒆 :: 𝑯𝒂̉𝒊 𝑺𝒄𝒓𝒊𝒑𝒕🍀 𝒗𝒆𝒓𝒔𝒊𝒐𝒏 𝟏.𝟎.𝟎\
 🔥𝒁𝒂𝒍𝒐: 𝟎𝟑𝟕𝟓𝟓𝟕𝟒𝟕𝟓𝟓📲.','๑𝑻𝒉𝒐𝒂́𝒕๑','๑𝑹𝒆𝒔𝒆𝒕๑','๑𝑲𝒊́𝒄𝒉 𝑯𝒐𝒂̣𝒕๑')
 if menu == nil then return 
 else
