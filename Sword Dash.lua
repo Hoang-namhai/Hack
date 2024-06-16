@@ -226,10 +226,8 @@ function home()
     local menu = gg.choice(homeMenuItems, nil, scriptTitle)
     if menu ~= nil then
         if menu == #homeMenuItems then
-        gg.alert('♥ᴍᴏᴅ ʙʏ ʜᴀ̉ɪ sᴄʀɪᴘᴛ♥')
-        gg.alert("❤️Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀")
-        print('☞♥Zᴀʟᴏ: 0375574755♥☜')
-            os.exit()
+        
+            HOME()
         end
         for i, v in pairs(methodEdits[menu].edits) do
             local edit = v
