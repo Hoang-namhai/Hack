@@ -5,7 +5,7 @@ methodEdits = {
         edits = {
             {
                 className = "DamageCalcRule",
-                methodName = "GetDamageResult",
+                methodName = "GetDamageMultiByTags",
                 armEdits = {{"~A MOV R0, #1", "~A BX LR"}, {"~A8 MOV W0, #0xFFFF", "~A8 RET"}}
             }}        
     },
