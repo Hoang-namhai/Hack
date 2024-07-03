@@ -11,10 +11,7 @@ A .. "",
 B .. "",
 C .. "",
 D .. "",
-G .. "",
-H .. "",
-K .. "",
-"🔘  [EXIT]"},nil,"❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀 ᴠᴇʀsɪᴏɴ 2.7.8 X64!\
+"🔘  [EXIT]"},nil,"❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀 ᴠᴇʀsɪᴏɴ 1.1.17 X64!\
 🔥Zᴀʟᴏ: 0375574755📲 ┆Mᴇɴᴜ Hᴀᴄᴋ ThreeKingdoms!\
   ")
 if HNH == nil then else
@@ -22,10 +19,7 @@ if HNH[1] == true then GodMod() end
 if HNH[2] == true then OneHit() end
 if HNH[3] == true then CoolDown() end
 if HNH[4] == true then AttackSpeed() end
-if HNH[5] == true then Exp() end
-if HNH[6] == true then Gold() end
-if HNH[7] == true then NgocTrai() end
-if HNH[8] == true then Exit() end
+if HNH[5] == true then Exit() end
 end
 XGCK = -1
 end
@@ -225,164 +219,6 @@ gg.setValues(APEX)
 gg.alert('🔥Hᴀᴄᴋ Dᴏɴᴇ🔥')
 
 D ="🔘 AttackSpeed 💢【✖】"end
-end
-
-
-
-G ="🔘 50xx Tỷ Exp 💫【✖】" 
-function Exp() 
-if G == "🔘 50xx Tỷ Exp 💫【✖】" then
-ACKA01=gg.getRangesList('libil2cpp.so')[2].start
-APEX=nil  APEX={}
-APEX[1]={}
-APEX[1].address=ACKA01+0x18E992C+0
-APEX[1].value='128142E0h'
-APEX[1].flags=4
-APEX[2]={}
-APEX[2].address=ACKA01+0x18E992C+4
-APEX[2].value='72AA69C0h'
-APEX[2].flags=4
-APEX[3]={}
-APEX[3].address=ACKA01+0x18E992C+8
-APEX[3].value='1E270000h'
-APEX[3].flags=4
-APEX[4]={}
-APEX[4].address=ACKA01+0x18E992C+12
-APEX[4].value='D65F03C0h'
-APEX[4].flags=4
-gg.setValues(APEX)
-gg.alert('🔥Hᴀᴄᴋ Dᴏɴᴇ🔥')
-
-G = "🔘 50xx Tỷ Exp 💫【✔】" 
-elseif G == "🔘 50xx Tỷ Exp 💫【✔】" then 
-ACKA01=gg.getRangesList('libil2cpp.so')[2].start
-APEX=nil  APEX={}
-APEX[1]={}
-APEX[1].address=ACKA01+0x18E992C+0
-APEX[1].value='D10183FFh'
-APEX[1].flags=4
-APEX[2]={}
-APEX[2].address=ACKA01+0x18E992C+4
-APEX[2].value='FD0023E8h'
-APEX[2].flags=4
-APEX[3]={}
-APEX[3].address=ACKA01+0x18E992C+8
-APEX[3].value='F90027F3h'
-APEX[3].flags=4
-APEX[4]={}
-APEX[4].address=ACKA01+0x18E992C+12
-APEX[4].value='A9057BFDh'
-APEX[4].flags=4
-gg.setValues(APEX)
-gg.alert('🔥Hᴀᴄᴋ Dᴏɴᴇ🔥')
-
-G ="🔘 50xx Tỷ Exp 💫【✖】"end
-end
-
-
-
-
-H ="🔘 X500 Tỷ Gold【✖】" 
-function Gold() 
-if H == "🔘 X500 Tỷ Gold【✖】" then
-ACKA01=gg.getRangesList('libil2cpp.so')[2].start
-APEX=nil  APEX={}
-APEX[1]={}
-APEX[1].address=ACKA01+0x18E96AC+0
-APEX[1].value='128142E0h'
-APEX[1].flags=4
-APEX[2]={}
-APEX[2].address=ACKA01+0x18E96AC+4
-APEX[2].value='72AA69C0h'
-APEX[2].flags=4
-APEX[3]={}
-APEX[3].address=ACKA01+0x18E96AC+8
-APEX[3].value='1E270000h'
-APEX[3].flags=4
-APEX[4]={}
-APEX[4].address=ACKA01+0x18E96AC+12
-APEX[4].value='D65F03C0h'
-APEX[4].flags=4
-gg.setValues(APEX)
-gg.alert('🔥Hᴀᴄᴋ Dᴏɴᴇ🔥')
-
-H = "🔘 X500 Tỷ Gold【✔】" 
-elseif H == "🔘 X500 Tỷ Gold【✔】" then 
-ACKA01=gg.getRangesList('libil2cpp.so')[2].start
-APEX=nil  APEX={}
-APEX[1]={}
-APEX[1].address=ACKA01+0x18E96AC+0
-APEX[1].value='D10243FFh'
-APEX[1].flags=4
-APEX[2]={}
-APEX[2].address=ACKA01+0x18E96AC+4
-APEX[2].value='6D0623E9h'
-APEX[2].flags=4
-APEX[3]={}
-APEX[3].address=ACKA01+0x18E96AC+8
-APEX[3].value='F9003BF3h'
-APEX[3].flags=4
-APEX[4]={}
-APEX[4].address=ACKA01+0x18E96AC+12
-APEX[4].value='A9087BFDh'
-APEX[4].flags=4
-gg.setValues(APEX)
-gg.alert('🔥Hᴀᴄᴋ Dᴏɴᴇ🔥')
-
-H ="🔘 X500 Tỷ Gold【✖】"end
-end
-
-
-
-
-K ="🔘 X500 Tỷ Ngọc Trai【✖】" 
-function NgocTrai() 
-if K == "🔘 X500 Tỷ Ngọc Trai【✖】" then
-ACKA01=gg.getRangesList('libil2cpp.so')[2].start
-APEX=nil  APEX={}
-APEX[1]={}
-APEX[1].address=ACKA01+0x18E99F0+0
-APEX[1].value='128142E0h'
-APEX[1].flags=4
-APEX[2]={}
-APEX[2].address=ACKA01+0x18E99F0+4
-APEX[2].value='72AA69C0h'
-APEX[2].flags=4
-APEX[3]={}
-APEX[3].address=ACKA01+0x18E99F0+8
-APEX[3].value='1E270000h'
-APEX[3].flags=4
-APEX[4]={}
-APEX[4].address=ACKA01+0x18E99F0+12
-APEX[4].value='D65F03C0h'
-APEX[4].flags=4
-gg.setValues(APEX)
-gg.alert('🔥Hᴀᴄᴋ Dᴏɴᴇ🔥')
-
-K = "🔘 X500 Tỷ Ngọc Trai【✔】" 
-elseif K == "🔘 X500 Tỷ Ngọc Trai【✔】" then 
-ACKA01=gg.getRangesList('libil2cpp.so')[2].start
-APEX=nil  APEX={}
-APEX[1]={}
-APEX[1].address=ACKA01+0x18E99F0+0
-APEX[1].value='D10183FFh'
-APEX[1].flags=4
-APEX[2]={}
-APEX[2].address=ACKA01+0x18E99F0+4
-APEX[2].value='FD0023E8h'
-APEX[2].flags=4
-APEX[3]={}
-APEX[3].address=ACKA01+0x18E99F0+8
-APEX[3].value='F90027F3h'
-APEX[3].flags=4
-APEX[4]={}
-APEX[4].address=ACKA01+0x18E99F0+12
-APEX[4].value='A9057BFDh'
-APEX[4].flags=4
-gg.setValues(APEX)
-gg.alert('🔥Hᴀᴄᴋ Dᴏɴᴇ🔥')
-
-K ="🔘 X500 Tỷ Ngọc Trai【✖】"end
 end
 
 
