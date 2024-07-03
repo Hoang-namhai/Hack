@@ -86,11 +86,11 @@ ACKA01=gg.getRangesList('libil2cpp.so')[2].start
 APEX=nil  APEX={}
 APEX[1]={}
 APEX[1].address=ACKA01+0x18D9208+0
-APEX[1].value='128250C0h'
+APEX[1].value='128827C0h'
 APEX[1].flags=4
 APEX[2]={}
 APEX[2].address=ACKA01+0x18D9208+4
-APEX[2].value='72A9CA60h'
+APEX[2].value='72AFD0A0h'
 APEX[2].flags=4
 APEX[3]={}
 APEX[3].address=ACKA01+0x18D9208+8
