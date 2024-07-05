@@ -5,7 +5,7 @@ methodEdits = {
         edits = {
             {
                 className = "DamageCalcRule",
-                methodName = "GetDamageMultiByTags",
+                methodName = "GetDamageDeepenByTags",
                 armEdits = {{"~A MOV R0, #1", "~A BX LR"}, {"~A8 MOV W0, #0xFFFF", "~A8 RET"}}
             }}        
     },
@@ -19,6 +19,17 @@ methodEdits = {
                 methodName = "GetHpPercent",
                 armEdits = {{"~A MOV R0, #1", "~A BX LR"}, {"~A8 MOV W0, #1", "~A8 RET"}}
             }}
+    },
+    
+        [3] = {
+        editName = "Critical Rate",
+        emoji = "💥",
+        edits = {
+            {
+                className = "DamageCalcRule",
+                methodName = "IsCrit",
+                armEdits = {{"~A MOV R0, #1", "~A BX LR"}, {"~A8 MOV W0, #1", "~A8 RET"}}
+            }}        
     }
 }
 fieldEdits = {
@@ -29,6 +40,12 @@ fieldEdits = {
     },
     [2] = {
         editName = "God Mod",
+        emoji = "",
+        edits = {}
+    },
+    
+    [3] = {
+        editName = "Critical Rate",
         emoji = "",
         edits = {}
     }
