@@ -6,7 +6,7 @@ methodEdits = {
             {
                 className = "DamageCalcRule",
                 methodName = "GetDamageDeepenByTags",
-                armEdits = {{"~A MOV R0, #1", "~A BX LR"}, {"~A8 MOV W0, #0xFFFF", "~A8 RET"}}
+                armEdits = {{"E3A00001h", "E3A00001h"}, {"529FFFE0h", "D65F03C0h"}}
             }}        
     },
     
@@ -17,7 +17,7 @@ methodEdits = {
             {
                 className = "BattleEntity",
                 methodName = "GetHpPercent",
-                armEdits = {{"~A MOV R0, #1", "~A BX LR"}, {"~A8 MOV W0, #1", "~A8 RET"}}
+                armEdits = {{"~A MOV R0, #1", "~A BX LR"}, {"52800020h", "D65F03C0h"}}
             }}
     },
     
@@ -28,9 +28,32 @@ methodEdits = {
             {
                 className = "DamageCalcRule",
                 methodName = "IsCrit",
-                armEdits = {{"~A MOV R0, #1", "~A BX LR"}, {"~A8 MOV W0, #1", "~A8 RET"}}
+                armEdits = {{"E3A00001h", "E3A00001h"}, {"52800020h", "D65F03C0h"}}
             }}        
-    }
+    },
+    
+            [4] = {
+        editName = "Energy Dash",
+        emoji = "💨",
+        edits = {
+            {
+                className = "DashComponent",
+                methodName = "GetDashCostEnergy",
+                armEdits = {{"E3A00001h", "E3A00001h"}, {"52800000h", "72A7F000h", "1E270000h", "D65F03C0h"}}
+            }}        
+    },
+    
+            [5] = {
+        editName = "No CD",
+        emoji = "🚫",
+        edits = {
+            {
+                className = "ActiveSkill",
+                methodName = "GetCdTime",
+                armEdits = {{"E3A00001h", "E3A00001h"}, {"D2800000h", "D65F03C0h"}}
+            }}        
+    },
+    
 }
 fieldEdits = {
     [1] = {
@@ -46,6 +69,17 @@ fieldEdits = {
     
     [3] = {
         editName = "Critical Rate",
+        emoji = "",
+        edits = {}
+    },
+         [4] = {
+        editName = "Energy Dash",
+        emoji = "",
+        edits = {}
+    },
+    
+    [5] = {
+        editName = "No CD",
         emoji = "",
         edits = {}
     }
