@@ -1,6 +1,6 @@
 methodEdits = {
     [1] = {
-        editName = "One Hit",
+        editName = "One Hit (Not Recommended)",
         emoji = "🗡️",
         edits = {
             {
