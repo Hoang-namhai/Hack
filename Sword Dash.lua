@@ -1,316 +1,307 @@
-methodEdits = {
-    [1] = {
-        editName = "One Hit (Not Recommended)",
-        emoji = "🗡️",
-        edits = {
-            {
-                className = "DamageCalcRule",
-                methodName = "GetDamageDeepenByTags",
-                armEdits = {{"E3A00001h", "E3A00001h"}, {"529FFFE0h", "D65F03C0h"}}
-            }}        
-    },
-    
-    [2] = {
-        editName = "God Mod",
-        emoji = "💉",
-        edits = {
-            {
-                className = "BattleEntity",
-                methodName = "GetHpPercent",
-                armEdits = {{"~A MOV R0, #1", "~A BX LR"}, {"52800020h", "D65F03C0h"}}
-            }}
-    },
-    
-        [3] = {
-        editName = "Critical Rate",
-        emoji = "💥",
-        edits = {
-            {
-                className = "DamageCalcRule",
-                methodName = "IsCrit",
-                armEdits = {{"E3A00001h", "E3A00001h"}, {"52800020h", "D65F03C0h"}}
-            }}        
-    },
-    
-            [4] = {
-        editName = "Energy Dash",
-        emoji = "💨",
-        edits = {
-            {
-                className = "DashComponent",
-                methodName = "GetDashCostEnergy",
-                armEdits = {{"E3A00001h", "E3A00001h"}, {"52800000h", "72A7F000h", "1E270000h", "D65F03C0h"}}
-            }}        
-    },
-    
-            [5] = {
-        editName = "No CD",
-        emoji = "🚫",
-        edits = {
-            {
-                className = "ActiveSkill",
-                methodName = "GetCdTime",
-                armEdits = {{"E3A00001h", "E3A00001h"}, {"D2800000h", "D65F03C0h"}}
-            }}        
-    },
-    
-}
-fieldEdits = {
-    [1] = {
-        editName = "One Hit",
-        emoji = "",
-        edits = {}
-    },
-    [2] = {
-        editName = "God Mod",
-        emoji = "",
-        edits = {}
-    },
-    
-    [3] = {
-        editName = "Critical Rate",
-        emoji = "",
-        edits = {}
-    },
-         [4] = {
-        editName = "Energy Dash",
-        emoji = "",
-        edits = {}
-    },
-    
-    [5] = {
-        editName = "No CD",
-        emoji = "",
-        edits = {}
-    }
-}
-
-scriptTitle = "❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀 ᴠᴇʀsɪᴏɴ 2.0.11 X64\
-🔥Zᴀʟᴏ: 0375574755📲 ┆Mᴇɴᴜ Hᴀᴄᴋ Sword Dash!\
-  "
-
-arch = gg.getTargetInfo()
-homeMenuItems = {}
-for i, v in pairs(methodEdits) do
-    homeMenuItems[i] = v.emoji .. " " .. v.editName
-    for index, value in pairs(v.edits) do
-        if arch.x64 then
-            methodEdits[i].edits[index].armEdits = methodEdits[i].edits[index].armEdits[2]
-        else
-            methodEdits[i].edits[index].armEdits = methodEdits[i].edits[index].armEdits[1]
-        end
-    end
+function Main()
+HNH = gg.multiChoice({
+A .. "", 
+B .. "",
+C .. "",
+D .. "",
+"[BACK]"},nil,"🅜🅔🅝🅤 ​ 🅗🅐🅒🅚 ​ 🅢🅦🅞🅡🅓 ​ 🅓🅐🅢🅗\n[Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ] ✔️\n[0375574755] 📲\n--------------------------------------------------------------")
+if HNH == nil then else
+if HNH[1] == true then DumbEnemy() end
+if HNH[2] == true then OneHit() end
+if HNH[3] == true then CriticalRate() end
+if HNH[4] == true then NoCD() end
+if HNH[5] == true then Exit() end
 end
-for i, v in pairs(fieldEdits) do
-    for index, value in pairs(v.edits) do
-        if arch.x64 then
-            fieldEdits[i].edits[index].armEdits = fieldEdits[i].edits[index].armEdits[2]
-        else
-            fieldEdits[i].edits[index].armEdits = fieldEdits[i].edits[index].armEdits[1]
-        end
-    end
-end
-homeMenuItems[#homeMenuItems + 1] = "❌ Exit"
-
-function fieldByOffset(ClassName, Offset, Edit, EditType, EditIfEqual)
-    local offset
-    local pointerType
-    if arch.x64 then
-        offset = 16
-        pointerType = gg.TYPE_QWORD
-    else
-        offset = 8
-        pointerType = gg.TYPE_DWORD
-    end
-    gg.clearResults()
-    gg.setRanges(gg.REGION_OTHER)
-    if ca_range == true then
-        gg.setRanges(gg.REGION_C_ALLOC)
-    end
-    gg.searchNumber(":" .. string.char(0) .. ClassName .. string.char(0), nil, nil, nil, range_start, nil, 1)
-    local result = gg.getResults(1, 1)
-    gg.clearResults()
-    gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_C_HEAP)
-    gg.searchNumber(result[1].address, pointerType)
-    local results = gg.getResults(gg.getResultsCount())
-    for i, v in pairs(results) do
-        results[i].address = results[i].address - offset
-    end
-    gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.loadResults(results)
-    gg.searchPointer(0)
-    results = gg.getResults(gg.getResultsCount())
-    gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.loadResults(results)
-    gg.searchPointer(0)
-    results = gg.getResults(gg.getResultsCount())
-    local tempTable = {}
-    for i, v in pairs(results) do
-        tempTable[i] = {
-            address = v.value,
-            flags = pointerType
-        }
-    end
-    gg.addListItems(tempTable)
-    results = gg.getListItems()
-    for i, v in pairs(results) do
-        results[i].address = results[i].address + Offset
-        results[i].flags = EditType
-        results[i].value = Edit
-    end
-    if EditIfEqual ~= nil then
-        if type(EditIfEqual) == "string" then
-            ::enter_value::
-            local menu = gg.prompt({EditIfEqual}, nil, {"number"})
-            if menu ~= nil then
-                EditIfEqual = menu[1]
-            else
-                goto enter_value
-            end
-        end
-        gg.loadResults(results)
-        gg.refineNumber(EditIfEqual, EditType)
-        results = gg.getResults(gg.getResultsCount())
-        for i, v in pairs(results) do
-            results[i].value = Edit
-        end
-    end
-    gg.setValues(results)
-    gg.clearList()
+XGCK = -1
 end
 
-function checkClassName(ClassName, pointerAddress)
-    local pointerType
-    if arch.x64 then
-        pointerType = gg.TYPE_QWORD
-    else
-        pointerType = gg.TYPE_DWORD
-    end
-    local textPointer = {
-        {
-            address = pointerAddress,
-            flags = pointerType
-        }}
-    textPointer = gg.getValues(textPointer)
-    local textAddress = textPointer[1].value
-    local textTable = {}
-    for i = 1, #ClassName do
-        textTable[i] = {
-            address = textAddress,
-            flags = gg.TYPE_BYTE
-        }
-        textAddress = textAddress + 1
-    end
-    textTable = gg.getValues(textTable)
-    local checkString = ""
-    for i, v in pairs(textTable) do
-        if v.value >= 0 or v.value <= 255 then
-            checkString = checkString .. string.char(v.value)
-        else
-            break
-        end
-    end
-    if checkString == ClassName then
-        return true
-    end
+A ="[OFF]  Dumb Enemy 💕" 
+function DumbEnemy() 
+if A == "[OFF]  Dumb Enemy 💕" then
+ACKA01=gg.getRangesList('libil2cpp.so')[2].start
+APEX=nil  APEX={}
+APEX[1]={}
+APEX[1].address=ACKA01+0xACB6A4+0
+APEX[1].value='D2800020h'
+APEX[1].flags=4
+APEX[2]={}
+APEX[2].address=ACKA01+0xACB6A4+4
+APEX[2].value='D65F03C0h'
+APEX[2].flags=4
+gg.setValues(APEX)
+gg.toast('✅Dumb Enemy✅')
+
+A = "[ON]  Dumb Enemy 💕" 
+elseif A == "[ON]  Dumb Enemy 💕" then 
+ACKA01=gg.getRangesList('libil2cpp.so')[2].start
+APEX=nil  APEX={}
+APEX[1]={}
+APEX[1].address=ACKA01+0xACB6A4+0
+APEX[1].value='B9404008h'
+APEX[1].flags=4
+APEX[2]={}
+APEX[2].address=ACKA01+0xACB6A4+4
+APEX[2].value='7100011Fh'
+APEX[2].flags=4
+gg.setValues(APEX)
+gg.toast('❌Dumb Enemy❌')
+
+A ="[OFF]  Dumb Enemy 💕"
+end
 end
 
-function methodByNames(ClassName, MethodName, ArmEdits)
-    local offset
-    local pointerType
-    if arch.x64 then
-        classOffset = 8
-        classOffset2 = 16
-        xaOffset = 16
-        pointerType = gg.TYPE_QWORD
-    else
-        classOffset = 4
-        classOffset2 = 8
-        xaOffset = 8
-        pointerType = gg.TYPE_DWORD
-    end
-    gg.clearResults()
-    gg.setRanges(gg.REGION_OTHER)
-    if ca_range == true then
-        gg.setRanges(gg.REGION_C_ALLOC)
-    end
-    gg.searchNumber(":" .. string.char(0) .. MethodName .. string.char(0), nil, nil, nil, range_start, nil, 1)
-    local result = gg.getResults(1, 1)
-    gg.clearResults()
-    gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_C_HEAP)
-    gg.searchNumber(result[1].address, pointerType)
-    local results = gg.getResults(gg.getResultsCount())
-    local classNames = gg.getResults(gg.getResultsCount())
-    for i, v in pairs(classNames) do
-        classNames[i].address = classNames[i].address + classOffset
-    end
-    classNames = gg.getValues(classNames)
-    local correctMethod
-    for i, v in pairs(classNames) do
-        if checkClassName(ClassName, v.value + classOffset2) == true then
-            correctMethod = i
-            break
-        end
-    end
-    local tempTable = {
-        {
-            address = results[correctMethod].address - xaOffset,
-            flags = pointerType
-        }}
-    tempTable = gg.getValues(tempTable)
-    local editAddress = tempTable[1].value
-    local editsTable = {}
-    for i, v in pairs(ArmEdits) do
-        editsTable[i] = {
-            address = editAddress,
-            flags = gg.TYPE_DWORD,
-            value = v
-        }
-        editAddress = editAddress + 4
-    end
-    gg.setValues(editsTable)
+
+
+
+
+B ="[OFF]  One Hit 💥" 
+function OneHit() 
+if B == "[OFF]  One Hit 💥" then
+ACKA01=gg.getRangesList('libil2cpp.so')[2].start
+APEX=nil  APEX={}
+APEX[1]={}
+APEX[1].address=ACKA01+0xAE0B98+0
+APEX[1].value='52807000h'
+APEX[1].flags=4
+APEX[2]={}
+APEX[2].address=ACKA01+0xAE0B98+4
+APEX[2].value='72A92B20h'
+APEX[2].flags=4
+APEX[3]={}
+APEX[3].address=ACKA01+0xAE0B98+8
+APEX[3].value='1E270000h'
+APEX[3].flags=4
+APEX[4]={}
+APEX[4].address=ACKA01+0xAE0B98+12
+APEX[4].value='D65F03C0h'
+APEX[4].flags=4
+gg.setValues(APEX)
+gg.toast('✅One Hit✅')
+
+B = "[ON]  One Hit 💥" 
+elseif B == "[ON]  One Hit 💥" then 
+ACKA01=gg.getRangesList('libil2cpp.so')[2].start
+APEX=nil  APEX={}
+APEX[1]={}
+APEX[1].address=ACKA01+0xAE0B98+0
+APEX[1].value='D10183FFh'
+APEX[1].flags=4
+APEX[2]={}
+APEX[2].address=ACKA01+0xAE0B98+4
+APEX[2].value='FD0013E8h'
+APEX[2].flags=4
+APEX[3]={}
+APEX[3].address=ACKA01+0xAE0B98+8
+APEX[3].value='A9035BF7h'
+APEX[3].flags=4
+APEX[4]={}
+APEX[4].address=ACKA01+0xAE0B98+12
+APEX[4].value='A90453F5h'
+APEX[4].flags=4
+gg.setValues(APEX)
+gg.toast('❌One Hit❌')
+
+B ="[OFF]  One Hit 💥"
+end
 end
 
-function home()
-    local menu = gg.choice(homeMenuItems, nil, scriptTitle)
-    if menu ~= nil then
-        if menu == #homeMenuItems then
-        
-            HOME()
-        end
-        for i, v in pairs(methodEdits[menu].edits) do
-            local edit = v
-            methodByNames(edit.className, edit.methodName, edit.armEdits)
-        end
-        for i, v in pairs(fieldEdits[menu].edits) do
-            local edit = v
-            fieldByOffset(edit.className, edit.armEdits, edit.editTo, edit.editType,
-                edit.editIfEqual)
-        end
-        gg.toast("✅ " .. fieldEdits[menu].editName .. " ✅")
-    end
+
+
+
+
+C ="[OFF]  Critical Rate 💨" 
+function CriticalRate() 
+if C == "[OFF]  Critical Rate 💨" then
+ACKA01=gg.getRangesList('libil2cpp.so')[2].start
+APEX=nil  APEX={}
+APEX[1]={}
+APEX[1].address=ACKA01+0xAE12EC+0
+APEX[1].value='D2800020h'
+APEX[1].flags=4
+APEX[2]={}
+APEX[2].address=ACKA01+0xAE12EC+4
+APEX[2].value='D65F03C0h'
+APEX[2].flags=4
+gg.setValues(APEX)
+gg.toast('✅Critical Rate✅')
+
+C = "[ON]  Critical Rate 💨" 
+elseif C == "[ON]  Critical Rate 💨" then 
+ACKA01=gg.getRangesList('libil2cpp.so')[2].start
+APEX=nil  APEX={}
+APEX[1]={}
+APEX[1].address=ACKA01+0xAE12EC+0
+APEX[1].value='FC1B0FE8h'
+APEX[1].flags=4
+APEX[2]={}
+APEX[2].address=ACKA01+0xAE12EC+4
+APEX[2].value='A90163F9h'
+APEX[2].flags=4
+gg.setValues(APEX)
+gg.toast('❌Critical Rate❌')
+
+C ="[OFF]  Critical Rate 💨"end
 end
 
+
+
+
+
+D ="[OFF]  No CoolDown 🚫" 
+function NoCD() 
+if D == "[OFF]  No CoolDown 🚫" then
+ACKA01=gg.getRangesList('libil2cpp.so')[2].start
+APEX=nil  APEX={}
+APEX[1]={}
+APEX[1].address=ACKA01+0xAE4120+0
+APEX[1].value='D2800000h'
+APEX[1].flags=4
+APEX[2]={}
+APEX[2].address=ACKA01+0xAE4120+4
+APEX[2].value='D65F03C0h'
+APEX[2].flags=4
+gg.setValues(APEX)
+
+ACKA01=gg.getRangesList('libil2cpp.so')[2].start
+APEX=nil  APEX={}
+APEX[1]={}
+APEX[1].address=ACKA01+0xD21F78+0
+APEX[1].value='52800000h'
+APEX[1].flags=4
+APEX[2]={}
+APEX[2].address=ACKA01+0xD21F78+4
+APEX[2].value='72A7F000h'
+APEX[2].flags=4
+APEX[3]={}
+APEX[3].address=ACKA01+0xD21F78+8
+APEX[3].value='1E270000h'
+APEX[3].flags=4
+APEX[4]={}
+APEX[4].address=ACKA01+0xD21F78+12
+APEX[4].value='D65F03C0h'
+APEX[4].flags=4
+gg.setValues(APEX)
+
+ACKA01=gg.getRangesList('libil2cpp.so')[2].start
+APEX=nil  APEX={}
+APEX[1]={}
+APEX[1].address=ACKA01+0xAACCD4+0
+APEX[1].value='D2800020h'
+APEX[1].flags=4
+APEX[2]={}
+APEX[2].address=ACKA01+0xAACCD4+4
+APEX[2].value='D65F03C0h'
+APEX[2].flags=4
+gg.setValues(APEX)
+
+ACKA01=gg.getRangesList('libil2cpp.so')[2].start
+APEX=nil  APEX={}
+APEX[1]={}
+APEX[1].address=ACKA01+0xAACC9C+0
+APEX[1].value='52800000h'
+APEX[1].flags=4
+APEX[2]={}
+APEX[2].address=ACKA01+0xAACC9C+4
+APEX[2].value='72A7F000h'
+APEX[2].flags=4
+APEX[3]={}
+APEX[3].address=ACKA01+0xAACC9C+8
+APEX[3].value='1E270000h'
+APEX[3].flags=4
+APEX[4]={}
+APEX[4].address=ACKA01+0xAACC9C+12
+APEX[4].value='D65F03C0h'
+APEX[4].flags=4
+gg.setValues(APEX)
+gg.toast('✅No CoolDown✅')
+
+D = "[ON]  No CoolDown 🚫" 
+elseif D == "[ON]  No CoolDown 🚫" then 
+ACKA01=gg.getRangesList('libil2cpp.so')[2].start
+APEX=nil  APEX={}
+APEX[1]={}
+APEX[1].address=ACKA01+0xAE4120+0
+APEX[1].value='D102C3FFh'
+APEX[1].flags=4
+APEX[2]={}
+APEX[2].address=ACKA01+0xAE4120+4
+APEX[2].value='6D042BEBh'
+APEX[2].flags=4
+gg.setValues(APEX)
+
+ACKA01=gg.getRangesList('libil2cpp.so')[2].start
+APEX=nil  APEX={}
+APEX[1]={}
+APEX[1].address=ACKA01+0xD21F78+0
+APEX[1].value='FC1D0FE8h'
+APEX[1].flags=4
+APEX[2]={}
+APEX[2].address=ACKA01+0xD21F78+4
+APEX[2].value='A90153F5h'
+APEX[2].flags=4
+APEX[3]={}
+APEX[3].address=ACKA01+0xD21F78+8
+APEX[3].value='A9027BF3h'
+APEX[3].flags=4
+APEX[4]={}
+APEX[4].address=ACKA01+0xD21F78+12
+APEX[4].value='F0012195h'
+APEX[4].flags=4
+gg.setValues(APEX)
+
+ACKA01=gg.getRangesList('libil2cpp.so')[2].start
+APEX=nil  APEX={}
+APEX[1]={}
+APEX[1].address=ACKA01+0xAACCD4+0
+APEX[1].value='FC1E0FE8h'
+APEX[1].flags=4
+APEX[2]={}
+APEX[2].address=ACKA01+0xAACCD4+4
+APEX[2].value='A9017BF3h'
+APEX[2].flags=4
+gg.setValues(APEX)
+
+ACKA01=gg.getRangesList('libil2cpp.so')[2].start
+APEX=nil  APEX={}
+APEX[1]={}
+APEX[1].address=ACKA01+0xAACC9C+0
+APEX[1].value='FC1E0FE8h'
+APEX[1].flags=4
+APEX[2]={}
+APEX[2].address=ACKA01+0xAACC9C+4
+APEX[2].value='A9017BF3h'
+APEX[2].flags=4
+APEX[3]={}
+APEX[3].address=ACKA01+0xAACC9C+8
+APEX[3].value='AA0003F3h'
+APEX[3].flags=4
+APEX[4]={}
+APEX[4].address=ACKA01+0xAACC9C+12
+APEX[4].value='97FFFBB6h'
+APEX[4].flags=4
+gg.setValues(APEX)
+gg.toast('❌No CoolDown❌')
+
+D ="[OFF]  No CoolDown 🚫"end
+end
+
+
+
+
+
+function Exit()
 gg.clearResults()
-s_b_s = ":" .. string.char(0) .. "mscorlib.dll" .. string.char(0)
-gg.setRanges(gg.REGION_OTHER)
-::try_ca::
-gg.searchNumber(s_b_s, gg.TYPE_BYTE, false, gg.SIGN_EQUAL, nil, nil, 1)
-if gg.getResultsCount() == 0 and ca_range ~= true then
-    ca_range = true
-    gg.setRanges(gg.REGION_C_ALLOC)
-    goto try_ca
+gg.clearList()
+gg.toast('♥ᴍᴏᴅ ʙʏ ʜᴀ̉ɪ sᴄʀɪᴘᴛ♥')
+gg.alert("❤️Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀")
+print('☞♥Zᴀʟᴏ: 0375574755♥☜')
+os.exit()
 end
-local start_search = gg.getResults(1)
-gg.clearResults()
-range_start = start_search[1].address
-
 while true do
-    if gg.isVisible() then
-        gg.setVisible(false)
-        home()
-    end
-    gg.sleep(100)
+if gg.isVisible(true) then
+XGCK = 1
+gg.setVisible(false)
 end
+if XGCK == 1 then HOME() end
+end
+
