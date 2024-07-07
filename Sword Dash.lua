@@ -292,16 +292,13 @@ end
 function Exit()
 gg.clearResults()
 gg.clearList()
-gg.toast('♥ᴍᴏᴅ ʙʏ ʜᴀ̉ɪ sᴄʀɪᴘᴛ♥')
-gg.alert("❤️Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀")
-print('☞♥Zᴀʟᴏ: 0375574755♥☜')
-os.exit()
+HOME()
 end
 while true do
 if gg.isVisible(true) then
 XGCK = 1
 gg.setVisible(false)
 end
-if XGCK == 1 then HOME() end
+if XGCK == 1 then Main() end
 end
-
+end
