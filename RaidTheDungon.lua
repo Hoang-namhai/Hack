@@ -25,9 +25,9 @@ gg.sleep(50)
 
 function mainMenu()
 firstMenu = gg.multiChoice({
-"🔘 𝚂𝚙𝚎𝚎𝚍 𝙶𝚊𝚖𝚎",
-"🔘 𝙼𝚎𝚗𝚞 𝙱𝚊𝚝𝚝𝚕𝚎",
-"🔘 [𝙴𝚇𝙸𝚃]"},nil,"❤𝗬𝗼𝘂𝘁𝘂𝗯𝗲 :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n🎮𝗚𝗮𝗺𝗲: Raid The Dungeon : Idle RPG X64\n💭𝗩𝗲𝗿𝘀𝗶𝗼𝗻: 1.62.1\n--------------------------------------------------------------")
+"🔘 Sᴘᴇᴇᴅ Gᴀᴍᴇ",
+"🔘 Mᴇɴᴜ Bᴀᴛᴛʟᴇ",
+"🔘 [Exɪᴛ]"},nil,"❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n🎮Game: Raid The Dungeon : Idle RPG X64\n💭Version: 1.62.1\n--------------------------------------------------------------")
 if firstMenu == nil then
 goto nill
 end
@@ -47,12 +47,12 @@ end
 
 function subMenu()
 bmenu = gg.multiChoice({
-"𝙰𝚌𝚝𝚒𝚟𝚊𝚝𝚎𝚍 𝙰𝚕𝚕💫",
-"𝙳𝚞𝚖𝚋 𝙴𝚗𝚎𝚖𝚢 👀",
-"𝙾𝚗𝚎 𝙷𝚒𝚝 💥",
-"𝙼𝚊𝚡 𝙳𝚎𝚏𝚎𝚗𝚜𝚎 💢",
-"𝙽𝚘 𝙲𝚘𝚘𝚕𝙳𝚘𝚠𝚗 🚫",
-"◀️𝙱𝚊𝚌𝚔"},nil,"🅜🅔🅝🅤 ​ 🅑🅐🅣🅣🅛🅔 ​ 🅥🅘🅟 !")
+"Activated All 💫",
+"Dumb Enemy 👀",
+"One Hit 💥",
+"Max Defense 💢",
+"No CoolDown 🚫",
+"◀️Back"},nil,"🅜🅔🅝🅤 ​ 🅑🅐🅣🅣🅛🅔 ​ 🅥🅘🅟 !")
 if bmenu == nil then
 goto ni
 end
@@ -258,7 +258,7 @@ valueFromClass("HeroSkillDB", "0x70", false, false, gg.TYPE_FLOAT)
 gg.getResults(9999)
 gg.editAll(0, gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast('✅𝙰𝚌𝚝𝚒𝚟𝚊𝚝𝚎𝚍✅')
+gg.toast('✅Activated✅')
 stopClose()
 end
 
@@ -270,7 +270,7 @@ valueFromClass("MonDB", "0x3C", false, false, gg.TYPE_FLOAT)
 gg.getResults(9999)
 gg.editAll(0, gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast('✅𝙰𝚌𝚝𝚒𝚟𝚊𝚝𝚎𝚍✅')
+gg.toast('✅Activated✅')
 stopClose()
 end
 
@@ -281,7 +281,7 @@ valueFromClass("MonDB", "0x28", false, false, gg.TYPE_DWORD)
 gg.getResults(9999)
 gg.editAll(1, gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast('✅𝙰𝚌𝚝𝚒𝚟𝚊𝚝𝚎𝚍✅')
+gg.toast('✅Activated✅')
 stopClose()
 end
 
@@ -293,7 +293,7 @@ valueFromClass("MonDB", "0x2C", false, false, gg.TYPE_DWORD)
 gg.getResults(9999)
 gg.editAll(1, gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast('✅𝙰𝚌𝚝𝚒𝚟𝚊𝚝𝚎𝚍✅')
+gg.toast('✅Activated✅')
 stopClose()
 end
 
@@ -305,7 +305,7 @@ valueFromClass("HeroSkillDB", "0x70", false, false, gg.TYPE_FLOAT)
 gg.getResults(9999)
 gg.editAll(0, gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast('✅𝙰𝚌𝚝𝚒𝚟𝚊𝚝𝚎𝚍✅')
+gg.toast('✅Activated✅')
 stopClose()
 end
 
