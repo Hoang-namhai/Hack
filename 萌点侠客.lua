@@ -2,7 +2,11 @@ userMode = 2 -- 1 = Developer mode, 2 = user mode
 
 
 
-
+local info = gg.getTargetPackage() 
+if info == "com.bgnb.mdxkdm" then 
+else
+os.exit(print("♥𝑯𝒂̉𝒊 𝑺𝒄𝒓𝒊𝒑𝒕☠️\n \n \n• Vᴜɪ Lᴏ̀ɴɢ Cʜᴏ̣ɴ Đᴜ́ɴɢ Tʀᴏ̀ Cʜᴏ̛ɪ Cᴜ̉ᴀ Sᴄʀɪᴘᴛ •"))
+end 
 
 
 
