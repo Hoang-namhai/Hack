@@ -25,7 +25,7 @@ gg.sleep(50)
 
 
 
-gg.alert("💬Script Không Thể Hoạt Động Trên Sv5 AE Lưu Ý💬")
+gg.alert("💬Script Không Thể Hoạt Động Trên Sv5 AE Lưu Ý")
 function mainMenu()
 firstMenu = gg.multiChoice({
 "🔘 Mᴇɴᴜ Tɪᴍᴇ",
