@@ -79,7 +79,7 @@ elseif
 menu == 1 then
 valueFromClass("MonsterCfg", "0x28", true, false, gg.TYPE_DWORD)
 gg.getResults(9999)
-gg.refineNumber("2~999999999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("2~9999999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(888888, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("1", gg.TYPE_DWORD)
 gg.clearResults()
