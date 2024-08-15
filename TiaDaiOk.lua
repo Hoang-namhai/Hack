@@ -12,34 +12,12 @@ end
 function Kichhoat()
 gg.clearResults()
 gg.clearList()
-gg.searchNumber("h3333333333164098F8FAA2", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("-104", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
-local t = gg.getResults(8888, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.addListItems(t)
-t = nil
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("h99D93F000000000000F83F", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("63", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(8888, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("-63", gg.TYPE_BYTE)
 gg.clearResults()
-local copy = false
-local t = gg.getListItems()
-if not copy then gg.removeListItems(t) end
-for i, v in ipairs(t) do
-	v.address = v.address + 0xffffffffffffffd7
-	if copy then v.name = v.name..' #2' end
-end
-gg.addListItems(t)
-t = nil
-copy = nil
-revert = gg.getListItems()
-local t = gg.getListItems()
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_BYTE then
-		v.value = "-63"
-		v.freeze = true
-		v.freezeType = gg.FREEZE_NORMAL
-	end
-end
-gg.addListItems(t)
-t = nil
-gg.clearList()
 gg.toast('✅Activated✅')
 end
 
@@ -49,34 +27,12 @@ end
 function Reset()
 gg.clearResults()
 gg.clearList()
-gg.searchNumber("h3333333333164098F8FAA2", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("-104", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
-local t = gg.getResults(8888, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.addListItems(t)
-t = nil
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("h99D9C1000000000000F8C1", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("-63", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(8888, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("63", gg.TYPE_BYTE)
 gg.clearResults()
-local copy = false
-local t = gg.getListItems()
-if not copy then gg.removeListItems(t) end
-for i, v in ipairs(t) do
-	v.address = v.address + 0xffffffffffffffd7
-	if copy then v.name = v.name..' #2' end
-end
-gg.addListItems(t)
-t = nil
-copy = nil
-revert = gg.getListItems()
-local t = gg.getListItems()
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_BYTE then
-		v.value = "63"
-		v.freeze = true
-		v.freezeType = gg.FREEZE_NORMAL
-	end
-end
-gg.addListItems(t)
-t = nil
-gg.clearList()
 gg.toast('✅Activated✅')
 end
 
