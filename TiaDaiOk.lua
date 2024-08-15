@@ -13,9 +13,9 @@ function Kichhoat()
 gg.clearResults()
 gg.clearList()
 gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("h 99 D9 3F 00 00 00 00 00 00 F8 3F", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("63", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
-local t = gg.getResults(8888, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.searchNumber(":٘C", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.processResume()
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.addListItems(t)
 t = nil
 gg.clearResults()
@@ -23,7 +23,7 @@ local copy = false
 local t = gg.getListItems()
 if not copy then gg.removeListItems(t) end
 for i, v in ipairs(t) do
-	v.address = v.address + 0x8
+	v.address = v.address + 0x7b
 	if copy then v.name = v.name..' #2' end
 end
 gg.addListItems(t)
@@ -46,14 +46,13 @@ end
 
 
 
-
 function Reset()
 gg.clearResults()
 gg.clearList()
 gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("h 99 D9 3F 00 00 00 00 00 00 F8 C1", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.refineNumber("63", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
-local t = gg.getResults(8888, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.searchNumber(":٘C", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.processResume()
+local t = gg.getResults(1, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.addListItems(t)
 t = nil
 gg.clearResults()
@@ -61,7 +60,7 @@ local copy = false
 local t = gg.getListItems()
 if not copy then gg.removeListItems(t) end
 for i, v in ipairs(t) do
-	v.address = v.address + 0x8
+	v.address = v.address + 0x7b
 	if copy then v.name = v.name..' #2' end
 end
 gg.addListItems(t)
