@@ -3,7 +3,7 @@ userMode = 2 -- 1 = Developer mode, 2 = user mode
 
 
 local info = gg.getTargetPackage() 
-if info == "com.bgnb.mdxkdm" then 
+if info == "com.dodjoy.mjdx.t9" then 
 else
 os.exit(print("♥𝑯𝒂̉𝒊 𝑺𝒄𝒓𝒊𝒑𝒕☠️\n \n \n• Vᴜɪ Lᴏ̀ɴɢ Cʜᴏ̣ɴ Đᴜ́ɴɢ Tʀᴏ̀ Cʜᴏ̛ɪ Cᴜ̉ᴀ Sᴄʀɪᴘᴛ •"))
 end 
@@ -17,7 +17,7 @@ gg.sleep(100)
 
 
 gg.getTargetInfo()
-gg.alert("𝙶𝙰𝙼𝙴 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 1.16                                                                                                                            𝙶𝙰𝙼𝙴 𝙽𝙰𝙼𝙴 : 萌点侠客 𝚇32                                                                                                                 𝚂𝙲𝚁𝙸𝙿𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 1.0                                                                                                                                 𝙻𝙰𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴 : 𝚂𝚊𝚝𝚞𝚛𝚍𝚊𝚢, 𝙹𝚞𝚕𝚢 𝟸0, 𝟸0𝟸𝟺                                                                                                  Mᴀᴅᴇ Bʏ Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ                                                                                                                                Sᴄʀɪᴘᴛ Pᴜʙʟɪsʜᴇᴅ ɪɴ ©2024", "[𝙽𝙴𝚇𝚃]")
+gg.alert("𝙶𝙰𝙼𝙴 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 2.4                                                                                                                            𝙶𝙰𝙼𝙴 𝙽𝙰𝙼𝙴 : ĐHCĐ Lậu 𝚇32                                                                                                                 𝚂𝙲𝚁𝙸𝙿𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 1.0                                                                                                                                 𝙻𝙰𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴 : 10/11/2024                                                                                                  Mᴀᴅᴇ Bʏ Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ                                                                                                                                Sᴄʀɪᴘᴛ Pᴜʙʟɪsʜᴇᴅ ɪɴ ©2024", "[𝙽𝙴𝚇𝚃]")
 
 ProgressBar =  "║░░░░░░░░░░░░░░░║";for x = 1,16,1 do gg.sleep(50) ProgressBar = ProgressBar:gsub("░","▓",1);gg.toast(ProgressBar) end gg.sleep(50) 
 gg.sleep(50)
@@ -25,13 +25,11 @@ gg.sleep(50)
 
 
 
-gg.alert("💬Script Không Thể Hoạt Động Trên Sv5...")
 function mainMenu()
 firstMenu = gg.multiChoice({
 "🔘 Mᴇɴᴜ Tɪᴍᴇ",
 "🔘 Mᴇɴᴜ Bᴀᴛᴛʟᴇ",
-"🔘 Tɪᴍᴇ Thí Luyện",
-"🔘 [Exɪᴛ]"},nil,"❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n🎮Game: 萌点侠客 X32\n💭Version: 1.16\n--------------------------------------------------------------")
+"🔘 [Exɪᴛ]"},nil,"❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n🎮Game: ĐHCH Lậu X32\n💭Version: 2.4\n--------------------------------------------------------------")
 if firstMenu == nil then
 goto nill
 end
@@ -42,9 +40,6 @@ if firstMenu[2] then
 MenuBattle()
 end
 if firstMenu[3] then
-TimeThiLuyen()
-end
-if firstMenu[4] then
 EXITALL()
 end
 ::nill::
@@ -104,112 +99,6 @@ stopClose()
 end
 
 
-function TimeThiLuyen()
-gg.alert("☛Đợi Đến Giây Thứ 5 Rồi Mới Bật Nhé☚")
-function searchValue(t,hai1,hai2)
-rt={}
-gg.setRanges(hai1)
-gg.clearResults()
-gg.clearList()
-gg.setVisible(false)
-gg.searchNumber(t[1], hai2)
-local r = gg.getResults(99999999)
-if #r==0 then goto HoangNamHai end
-for it=2,#t do
-for i=1,#r do
-r[i].address=r[i].address+t[it][2]
-end
-local rr=gg.getValues(r)
-tt={}
-for i=1,#rr do
-   if rr[i].value== t[it][1] then
-   ii=#tt+1
-   tt[ii]={}
-   tt[ii].address=rr[i].address-t[it][2]
-   tt[ii].flags=4
-   end
-end
-if #tt==0 then goto HoangNamHai end
-r=gg.getValues(tt)
-if it==#t then rt=r goto HoangNamHai end
-end
-::HoangNamHai::
-return rt
-end
-
-function searchEdit(hnh1,hnh2,hnh3)
-if #r>0 then
-tt={}
-for i=1,#r do
-ii=#tt+1 tt[ii]={}
-tt[ii].address=r[i].address +hnh1
-tt[ii].flags=hnh2
-tt[ii].value=hnh3
-end
-gg.setValues(tt)
-end end
-
-
-r=searchValue({"4201",{"5",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
-if #r == 0 then else
-searchEdit(-7*4,4, 290)
-gg.clearResults()
-gg.toast('✅Activated✅')
-
-function searchValue(t,hai1,hai2)
-rt={}
-gg.setRanges(hai1)
-gg.clearResults()
-gg.clearList()
-gg.setVisible(false)
-gg.searchNumber(t[1], hai2)
-local r = gg.getResults(99999999)
-if #r==0 then goto HoangNamHai end
-for it=2,#t do
-for i=1,#r do
-r[i].address=r[i].address+t[it][2]
-end
-local rr=gg.getValues(r)
-tt={}
-for i=1,#rr do
-   if rr[i].value== t[it][1] then
-   ii=#tt+1
-   tt[ii]={}
-   tt[ii].address=rr[i].address-t[it][2]
-   tt[ii].flags=4
-   end
-end
-if #tt==0 then goto HoangNamHai end
-r=gg.getValues(tt)
-if it==#t then rt=r goto HoangNamHai end
-end
-::HoangNamHai::
-return rt
-end
-
-function searchEdit(hnh1,hnh2,hnh3)
-if #r>0 then
-tt={}
-for i=1,#r do
-ii=#tt+1 tt[ii]={}
-tt[ii].address=r[i].address +hnh1
-tt[ii].flags=hnh2
-tt[ii].value=hnh3
-end
-gg.setValues(tt)
-end end
-
-
-r=searchValue({"4201",{"6",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
-if #r == 0 then else
-searchEdit(-7*4,4, 290)
-gg.clearResults()
-gg.alert('✅Activated✅')
-stopClose()
-end
-end
-
-
 
 function GodMod()
 valueFromClass("DamageInfo", "0x8", false, true, gg.TYPE_DWORD)
@@ -219,7 +108,7 @@ gg.clearResults()
 gg.toast('✅Activated✅')
 stopClose()
 end
-end
+
 
 
 
@@ -237,10 +126,10 @@ end
 
 
 function SkillVip()
-gg.alert("- Hãy Chọn Vũ Khí Và Skill Đánh Tầm Xa Để Được Hiệu Quả Nhất..\n- Mấy Ví Khí Khác Thì Chưa Nên AE Có Thể Thử Từng Cái..\n- Nếu Skill Không Hoạt Động Hoặc K Đủ Thì Có Thể Bật Lại SkillVip Để Được Kích hoạt Lại Nhé... ")
+gg.alert("- Hãy Chọn Vũ Khí Và Skill Đánh Tầm Xa Để Được Hiệu Quả Nhất..\n- Mấy Vũ Khí Khác Thì Mình Chưa Test Nên AE Có Thể Thử Từng Cái..\n- Nếu Skill Không Hoạt Động Hoặc K Đủ Thì Có Thể Bật Lại SkillVip Để Được Kích hoạt Lại Nhé... ")
 valueFromClass("SkillRuleEventSelectRandomEnemy", "0x34", false, true, gg.TYPE_DWORD)
 gg.getResults(9999)
-gg.editAll(8, gg.TYPE_DWORD)
+gg.editAll("100", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast('✅Activated✅')
 stopClose()
