@@ -605,9 +605,11 @@ end
 
 
 function GodMod()
-valueFromClass("DamageInfo", "0x8", false, true, gg.TYPE_DWORD)
+valueFromClass("MonsterCfg", "0x34", false, true, gg.TYPE_DWORD)
 gg.getResults(9999)
-gg.editAll(-888888888, gg.TYPE_DWORD)
+gg.refineNumber("1~999999999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(888888, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("-888888888", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast('✅Activated✅')
 stopClose()
