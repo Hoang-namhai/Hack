@@ -5,24 +5,23 @@ userMode = 2 -- 1 = Developer mode, 2 = user mode
 local info = gg.getTargetPackage() 
 if info == "com.dodjoy.mjdx.t9" then 
 else
-os.exit(print("♥𝑯𝒂̉𝒊 𝑺𝒄𝒓𝒊𝒑𝒕☠️\n \n• Vᴜɪ Lᴏ̀ɴɢ Cʜᴏ̣ɴ Đᴜ́ɴɢ Tʀᴏ̀ Cʜᴏ̛ɪ Cᴜ̉ᴀ Sᴄʀɪᴘᴛ •\n• ʜᴏᴀ̣̆ᴄ ᴄᴀ̣̂ᴘ ɴʜᴀ̣̂ᴛ ꜱᴄʀɪᴘᴛ ʙᴀ̉ɴ ᴜᴘᴅᴀᴛᴇ ᴍᴏ̛́ɪ ɴʜᴀ̂́ᴛ... •\n • Liên Hệ Zalo: 0375574755📱 •"))
+os.exit(print("♥𝑯𝒂̉𝒊 𝑺𝒄𝒓𝒊𝒑𝒕☠️\n \n \n• Vᴜɪ Lᴏ̀ɴɢ Cʜᴏ̣ɴ Đᴜ́ɴɢ Tʀᴏ̀ Cʜᴏ̛ɪ Cᴜ̉ᴀ Sᴄʀɪᴘᴛ •"))
 end 
 
 
 
-
+ProgressBar =  "║░░░░░░░░░░░░░░░║";for x = 1,16,1 do gg.sleep(50) ProgressBar = ProgressBar:gsub("░","▓",1);gg.toast(ProgressBar) end gg.sleep(50) 
 gg.sleep(100) 
 
 
 
 
 gg.getTargetInfo()
-gg.alert("𝙶𝙰𝙼𝙴 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 2.4                                                                                                                            𝙶𝙰𝙼𝙴 𝙽𝙰𝙼𝙴 : ĐHCĐ Ahihi 𝚇32                                                                                                                 𝚂𝙲𝚁𝙸𝙿𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 1.2                                                                                                                                 𝙻𝙰𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴 : 23/11/2024                                                                                                  Mᴀᴅᴇ Bʏ Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ                                                                                                                                Sᴄʀɪᴘᴛ Pᴜʙʟɪsʜᴇᴅ ɪɴ ©2024", "[𝙽𝙴𝚇𝚃]")
+gg.alert("𝙶𝙰𝙼𝙴 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 2.4                                                                                                                            𝙶𝙰𝙼𝙴 𝙽𝙰𝙼𝙴 : ĐHCĐ Lậu 𝚇32                                                                                                                 𝚂𝙲𝚁𝙸𝙿𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 1.0                                                                                                                                 𝙻𝙰𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴 : 10/11/2024                                                                                                  Mᴀᴅᴇ Bʏ Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ                                                                                                                                Sᴄʀɪᴘᴛ Pᴜʙʟɪsʜᴇᴅ ɪɴ ©2024", "[𝙽𝙴𝚇𝚃]")
 
-
+ProgressBar =  "║░░░░░░░░░░░░░░░║";for x = 1,16,1 do gg.sleep(50) ProgressBar = ProgressBar:gsub("░","▓",1);gg.toast(ProgressBar) end gg.sleep(50) 
 gg.sleep(50)
 gg.sleep(50)
-
 
 
 
@@ -30,8 +29,7 @@ function mainMenu()
 firstMenu = gg.multiChoice({
 "🔘 Mᴇɴᴜ Tɪᴍᴇ",
 "🔘 Mᴇɴᴜ Bᴀᴛᴛʟᴇ",
-"🔘 Tɪᴍᴇ Thí Luyện",
-"🔘 [Exɪᴛ]"},nil,"❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n🎮Game: ĐHCĐ Ahihi X32\n💭Version: 2.4\n------------------------------------------------")
+"🔘 [Exɪᴛ]"},nil,"❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n🎮Game: ĐHCH Lậu X32\n💭Version: 2.4\n--------------------------------------------------------------")
 if firstMenu == nil then
 goto nill
 end
@@ -42,9 +40,6 @@ if firstMenu[2] then
 MenuBattle()
 end
 if firstMenu[3] then
-TimeThiLuyen()
-end
-if firstMenu[4] then
 EXITALL()
 end
 ::nill::
@@ -53,14 +48,13 @@ end
 
 
 function MenuBattle()
-gg.alert("☻Vui Lòng Đọc Qua Hướng Dẫn Sử Dụng Trước Khi Bật Hack☻")
 bmenu = gg.multiChoice({
 "➣ God Mod ❤️",
-"➣ One Hit Boss 💥",
+"➣ One Hit 💥",
 "➣ Skill Vip 💢",
 "➣ Hướng Dẫn Sử Dụng😎",
 "[Bᴀᴄᴋ]"
-}, nil,"🅜🅔🅝🅤 ​ 🅑🅐🅣🅣🅛🅔 ​ 🅥🅘🅟!\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n------------------------------------------------")
+}, nil,"🅜🅔🅝🅤 ​ 🅑🅐🅣🅣🅛🅔 ​ 🅥🅘🅟!\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n--------------------------------------------------------------")
 if bmenu == nil then
 goto ni
 end
@@ -85,30 +79,7 @@ end
 end
 
 function MenuTime()
-Amenu = gg.multiChoice({
-"➣ Hack Time 💕",
-"➣ Hướng Dẫn Sử Dụng😎",
-"[Bᴀᴄᴋ]"
-}, nil,"🅜🅔🅝🅤 ​ 🅑🅐🅣🅣🅛🅔 ​ 🅣🅘🅜🅔!\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n------------------------------------------------")
-if Amenu == nil then
-goto ni
-end
-if Amenu[1] then
-HackTime()
-end
-if Amenu[2] then
-HDSD1()
-end
-if Amenu[3] then
-Back2()
-
-
-end
-::ni::
-end
-
-
-function HackTime()
+gg.alert("- Hướng Dẫn:\n\n- Ải Thường:\n+ Mã Ải: 1.1 Là 1011\n+ Mã Ải: 1.2 Là 1012\n+ Mã Ải: 2.1 Là 1021\n+ Mã Ải: 2.2 Là 1022\n+ Các Màn Khác Cũng Áp Dụng Mã Như Vậy..\n\n- Ải Tinh Anh:\n+ Mã Ải: 1.1 Là 2011\n+ Mã Ải: 1.2 Là 2012\n+ Mã Ải: 2.1 Là 2021\n+ Mã Ải: 2.2 Là 2022\n+ Các Màn Khác Cũng Áp Dụng Mã Như Vậy..\n\n- Thay Mã Như Sau:\n5~6;☛☚;30:117\n5~6;1011;30:117\nVí Dụ Đây Là Ải 1.1...\n+ Thời Gian Ải Đợi Đến 5s Rồi Tạm Dừng Trận Đấu Rồi Mới Bật...")
 gg.clearResults()
 local gg = gg
 gg.setVisible(false)
@@ -124,532 +95,29 @@ revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("900", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast('🔥Hᴀᴄᴋ Dᴏɴᴇ🔥')
-MenuTime()
-end
-
-
-
-function HDSD1()
-gg.alert("- Hướng Dẫn:\n\n- Ải Thường:\n+ Mã Ải: 1.1 Là 1011\n+ Mã Ải: 1.2 Là 1012\n+ Mã Ải: 2.1 Là 1021\n+ Mã Ải: 2.2 Là 1022\n+ Các Màn Khác Cũng Áp Dụng Mã Như Vậy..\n\n- Ải Tinh Anh:\n+ Mã Ải: 1.1 Là 2011\n+ Mã Ải: 1.2 Là 2012\n+ Mã Ải: 2.1 Là 2021\n+ Mã Ải: 2.2 Là 2022\n+ Các Màn Khác Cũng Áp Dụng Mã Như Vậy..\n\n- Thay Mã Như Sau:\n5~6;☛☚;30:117\n5~6;1011;30:117\nVí Dụ Đây Là Ải 1.1...\n+ Thời Gian Ải Đợi Đến 5s Rồi Tạm Dừng Trận Đấu Rồi Mới Bật...")
-MenuTime()
-end
-
-
-
-
-function TimeThiLuyen()
-Cmenu = gg.multiChoice({
-"➣ 1. Hoa Sơn Luận Kiếm",
-"➣ 2. Quyết Chiến Tử Cấm",
-"➣ 3. Vi Công Quang Minh Đỉnh",
-"➣ 4. Huyết Chiến Hắc Mộc Nhai",
-"➣ 5. Hướng Dẫn Sử Dụng",
-"[Bᴀᴄᴋ]"
-}, nil,"🅜🅔🅝🅤 ​ 🅣🅗🅘 ​ 🅛🅤🅨🅔🅝!\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n------------------------------------------------")
-if Cmenu == nil then
-goto ni
-end
-if Cmenu[1] then
-Map1()
-end
-if Cmenu[2] then
-Map2()
-end
-if Cmenu[3] then
-Map3()
-end
-if Cmenu[4] then
-Map4()
-end
-if Cmenu[5] then
-TB()
-end
-if Cmenu[6] then
-Back2()
-
-
-end
-::ni::
-end
-
-function Map1()
-function searchValue(t,hai1,hai2)
-rt={}
-gg.setRanges(hai1)
-gg.clearResults()
-gg.clearList()
-gg.setVisible(false)
-gg.searchNumber(t[1], hai2)
-local r = gg.getResults(99999999)
-if #r==0 then goto HoangNamHai end
-for it=2,#t do
-for i=1,#r do
-r[i].address=r[i].address+t[it][2]
-end
-local rr=gg.getValues(r)
-tt={}
-for i=1,#rr do
-   if rr[i].value== t[it][1] then
-   ii=#tt+1
-   tt[ii]={}
-   tt[ii].address=rr[i].address-t[it][2]
-   tt[ii].flags=4
-   end
-end
-if #tt==0 then goto HoangNamHai end
-r=gg.getValues(tt)
-if it==#t then rt=r goto HoangNamHai end
-end
-::HoangNamHai::
-return rt
-end
-
-function searchEdit(hnh1,hnh2,hnh3)
-if #r>0 then
-tt={}
-for i=1,#r do
-ii=#tt+1 tt[ii]={}
-tt[ii].address=r[i].address +hnh1
-tt[ii].flags=hnh2
-tt[ii].value=hnh3
-end
-gg.setValues(tt)
-end end
-
-
-r=searchValue({"4041",{"5",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
-if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.toast('✅Activated✅')
-
-function searchValue(t,hai1,hai2)
-rt={}
-gg.setRanges(hai1)
-gg.clearResults()
-gg.clearList()
-gg.setVisible(false)
-gg.searchNumber(t[1], hai2)
-local r = gg.getResults(99999999)
-if #r==0 then goto HoangNamHai end
-for it=2,#t do
-for i=1,#r do
-r[i].address=r[i].address+t[it][2]
-end
-local rr=gg.getValues(r)
-tt={}
-for i=1,#rr do
-   if rr[i].value== t[it][1] then
-   ii=#tt+1
-   tt[ii]={}
-   tt[ii].address=rr[i].address-t[it][2]
-   tt[ii].flags=4
-   end
-end
-if #tt==0 then goto HoangNamHai end
-r=gg.getValues(tt)
-if it==#t then rt=r goto HoangNamHai end
-end
-::HoangNamHai::
-return rt
-end
-
-function searchEdit(hnh1,hnh2,hnh3)
-if #r>0 then
-tt={}
-for i=1,#r do
-ii=#tt+1 tt[ii]={}
-tt[ii].address=r[i].address +hnh1
-tt[ii].flags=hnh2
-tt[ii].value=hnh3
-end
-gg.setValues(tt)
-end end
-
-
-r=searchValue({"4041",{"6",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
-if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.alert('✅Activated✅')
 stopClose()
 end
-end
-end
 
-
-
-function Map2()
-function searchValue(t,hai1,hai2)
-rt={}
-gg.setRanges(hai1)
-gg.clearResults()
-gg.clearList()
-gg.setVisible(false)
-gg.searchNumber(t[1], hai2)
-local r = gg.getResults(99999999)
-if #r==0 then goto HoangNamHai end
-for it=2,#t do
-for i=1,#r do
-r[i].address=r[i].address+t[it][2]
-end
-local rr=gg.getValues(r)
-tt={}
-for i=1,#rr do
-   if rr[i].value== t[it][1] then
-   ii=#tt+1
-   tt[ii]={}
-   tt[ii].address=rr[i].address-t[it][2]
-   tt[ii].flags=4
-   end
-end
-if #tt==0 then goto HoangNamHai end
-r=gg.getValues(tt)
-if it==#t then rt=r goto HoangNamHai end
-end
-::HoangNamHai::
-return rt
-end
-
-function searchEdit(hnh1,hnh2,hnh3)
-if #r>0 then
-tt={}
-for i=1,#r do
-ii=#tt+1 tt[ii]={}
-tt[ii].address=r[i].address +hnh1
-tt[ii].flags=hnh2
-tt[ii].value=hnh3
-end
-gg.setValues(tt)
-end end
-
-
-r=searchValue({"4081",{"5",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
-if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.toast('✅Activated✅')
-
-function searchValue(t,hai1,hai2)
-rt={}
-gg.setRanges(hai1)
-gg.clearResults()
-gg.clearList()
-gg.setVisible(false)
-gg.searchNumber(t[1], hai2)
-local r = gg.getResults(99999999)
-if #r==0 then goto HoangNamHai end
-for it=2,#t do
-for i=1,#r do
-r[i].address=r[i].address+t[it][2]
-end
-local rr=gg.getValues(r)
-tt={}
-for i=1,#rr do
-   if rr[i].value== t[it][1] then
-   ii=#tt+1
-   tt[ii]={}
-   tt[ii].address=rr[i].address-t[it][2]
-   tt[ii].flags=4
-   end
-end
-if #tt==0 then goto HoangNamHai end
-r=gg.getValues(tt)
-if it==#t then rt=r goto HoangNamHai end
-end
-::HoangNamHai::
-return rt
-end
-
-function searchEdit(hnh1,hnh2,hnh3)
-if #r>0 then
-tt={}
-for i=1,#r do
-ii=#tt+1 tt[ii]={}
-tt[ii].address=r[i].address +hnh1
-tt[ii].flags=hnh2
-tt[ii].value=hnh3
-end
-gg.setValues(tt)
-end end
-
-
-r=searchValue({"4081",{"6",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
-if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.alert('✅Activated✅')
-stopClose()
-end
-end
-end
-
-
-function Map3()
-function searchValue(t,hai1,hai2)
-rt={}
-gg.setRanges(hai1)
-gg.clearResults()
-gg.clearList()
-gg.setVisible(false)
-gg.searchNumber(t[1], hai2)
-local r = gg.getResults(99999999)
-if #r==0 then goto HoangNamHai end
-for it=2,#t do
-for i=1,#r do
-r[i].address=r[i].address+t[it][2]
-end
-local rr=gg.getValues(r)
-tt={}
-for i=1,#rr do
-   if rr[i].value== t[it][1] then
-   ii=#tt+1
-   tt[ii]={}
-   tt[ii].address=rr[i].address-t[it][2]
-   tt[ii].flags=4
-   end
-end
-if #tt==0 then goto HoangNamHai end
-r=gg.getValues(tt)
-if it==#t then rt=r goto HoangNamHai end
-end
-::HoangNamHai::
-return rt
-end
-
-function searchEdit(hnh1,hnh2,hnh3)
-if #r>0 then
-tt={}
-for i=1,#r do
-ii=#tt+1 tt[ii]={}
-tt[ii].address=r[i].address +hnh1
-tt[ii].flags=hnh2
-tt[ii].value=hnh3
-end
-gg.setValues(tt)
-end end
-
-
-r=searchValue({"4111",{"5",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
-if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.toast('✅Activated✅')
-
-function searchValue(t,hai1,hai2)
-rt={}
-gg.setRanges(hai1)
-gg.clearResults()
-gg.clearList()
-gg.setVisible(false)
-gg.searchNumber(t[1], hai2)
-local r = gg.getResults(99999999)
-if #r==0 then goto HoangNamHai end
-for it=2,#t do
-for i=1,#r do
-r[i].address=r[i].address+t[it][2]
-end
-local rr=gg.getValues(r)
-tt={}
-for i=1,#rr do
-   if rr[i].value== t[it][1] then
-   ii=#tt+1
-   tt[ii]={}
-   tt[ii].address=rr[i].address-t[it][2]
-   tt[ii].flags=4
-   end
-end
-if #tt==0 then goto HoangNamHai end
-r=gg.getValues(tt)
-if it==#t then rt=r goto HoangNamHai end
-end
-::HoangNamHai::
-return rt
-end
-
-function searchEdit(hnh1,hnh2,hnh3)
-if #r>0 then
-tt={}
-for i=1,#r do
-ii=#tt+1 tt[ii]={}
-tt[ii].address=r[i].address +hnh1
-tt[ii].flags=hnh2
-tt[ii].value=hnh3
-end
-gg.setValues(tt)
-end end
-
-
-r=searchValue({"4111",{"6",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
-if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.alert('✅Activated✅')
-stopClose()
-end
-end
-end
-
-
-
-function Map4()
-function searchValue(t,hai1,hai2)
-rt={}
-gg.setRanges(hai1)
-gg.clearResults()
-gg.clearList()
-gg.setVisible(false)
-gg.searchNumber(t[1], hai2)
-local r = gg.getResults(99999999)
-if #r==0 then goto HoangNamHai end
-for it=2,#t do
-for i=1,#r do
-r[i].address=r[i].address+t[it][2]
-end
-local rr=gg.getValues(r)
-tt={}
-for i=1,#rr do
-   if rr[i].value== t[it][1] then
-   ii=#tt+1
-   tt[ii]={}
-   tt[ii].address=rr[i].address-t[it][2]
-   tt[ii].flags=4
-   end
-end
-if #tt==0 then goto HoangNamHai end
-r=gg.getValues(tt)
-if it==#t then rt=r goto HoangNamHai end
-end
-::HoangNamHai::
-return rt
-end
-
-function searchEdit(hnh1,hnh2,hnh3)
-if #r>0 then
-tt={}
-for i=1,#r do
-ii=#tt+1 tt[ii]={}
-tt[ii].address=r[i].address +hnh1
-tt[ii].flags=hnh2
-tt[ii].value=hnh3
-end
-gg.setValues(tt)
-end end
-
-
-r=searchValue({"4141",{"5",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
-if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.toast('✅Activated✅')
-
-
-function searchValue(t,hai1,hai2)
-rt={}
-gg.setRanges(hai1)
-gg.clearResults()
-gg.clearList()
-gg.setVisible(false)
-gg.searchNumber(t[1], hai2)
-local r = gg.getResults(99999999)
-if #r==0 then goto HoangNamHai end
-for it=2,#t do
-for i=1,#r do
-r[i].address=r[i].address+t[it][2]
-end
-local rr=gg.getValues(r)
-tt={}
-for i=1,#rr do
-   if rr[i].value== t[it][1] then
-   ii=#tt+1
-   tt[ii]={}
-   tt[ii].address=rr[i].address-t[it][2]
-   tt[ii].flags=4
-   end
-end
-if #tt==0 then goto HoangNamHai end
-r=gg.getValues(tt)
-if it==#t then rt=r goto HoangNamHai end
-end
-::HoangNamHai::
-return rt
-end
-
-function searchEdit(hnh1,hnh2,hnh3)
-if #r>0 then
-tt={}
-for i=1,#r do
-ii=#tt+1 tt[ii]={}
-tt[ii].address=r[i].address +hnh1
-tt[ii].flags=hnh2
-tt[ii].value=hnh3
-end
-gg.setValues(tt)
-end end
-
-
-r=searchValue({"4141",{"6",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
-if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.alert('✅Activated✅')
-stopClose()
-end
-end
-end
-
-
-function TB()
-gg.alert("- Hướng Dẫn:\n\n- ☛Đợi Đến Giây Thứ 5 Rồi Mới Bật Nhé☚\n- Muốn Edit lại số time hãy LH Zalo: 0375574755🔧")
-TimeThiLuyen()
-end
 
 
 function GodMod()
-valueFromClass("MonsterCfg", "0x38", false, true, gg.TYPE_DWORD)
-gg.getResults(888888)
-gg.refineNumber("1~999999999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-revert = gg.getResults(888888, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("0", gg.TYPE_DWORD)
+valueFromClass("DamageInfo", "0x8", false, true, gg.TYPE_DWORD)
+gg.getResults(9999)
+gg.editAll(-888888888, gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast('✅Activated✅')
 stopClose()
 end
+
 
 
 
 function OneHit()
-valueFromClass("MonsterCfg", "0x2C", false, true, gg.TYPE_DWORD)
+valueFromClass("MonsterCfg", "0x28", false, true, gg.TYPE_DWORD)
 gg.getResults(9999)
 gg.refineNumber("2~999999999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-local t = gg.getResults(88888, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.addListItems(t)
-t = nil
-revert = gg.getResults(88888, nil, nil, nil, nil, nil, nil, nil, nil)
+revert = gg.getResults(888888, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("1", gg.TYPE_DWORD)
-gg.clearResults()
-local copy = false
-local t = gg.getListItems()
-if not copy then gg.removeListItems(t) end
-for i, v in ipairs(t) do
-	v.address = v.address + 0xfffffffffffffffc
-	if copy then v.name = v.name..' #2' end
-end
-gg.addListItems(t)
-t = nil
-copy = nil
-revert = gg.getListItems()
-local t = gg.getListItems()
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_DWORD then
-		v.value = "-888"
-		v.freeze = true
-		v.freezeType = gg.FREEZE_NORMAL
-	end
-end
-gg.addListItems(t)
-t = nil
-gg.clearList()
 gg.clearResults()
 gg.toast('✅Activated✅')
 stopClose()
@@ -657,12 +125,11 @@ end
 
 
 
-
 function SkillVip()
-gg.alert("- Hãy Chọn Vũ Khí Và Skill Đánh Tầm Xa Để Được Hiệu Quả Nhất..\n- Mấy Ví Khí Khác Thì Chưa Nên AE Có Thể Thử Từng Cái..\n- Nếu Skill Không Hoạt Động Hoặc K Đủ Thì Có Thể Bật Lại SkillVip Để Được Kích hoạt Lại Nhé... ")
+gg.alert("- Hãy Chọn Vũ Khí Và Skill Đánh Tầm Xa Để Được Hiệu Quả Nhất..\n- Mấy Vũ Khí Khác Thì Mình Chưa Test Nên AE Có Thể Thử Từng Cái..\n- Nếu Skill Không Hoạt Động Hoặc K Đủ Thì Có Thể Bật Lại SkillVip Để Được Kích hoạt Lại Nhé... ")
 valueFromClass("SkillRuleEventSelectRandomEnemy", "0x34", false, true, gg.TYPE_DWORD)
 gg.getResults(9999)
-gg.editAll(8, gg.TYPE_DWORD)
+gg.editAll("100", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast('✅Activated✅')
 stopClose()
@@ -672,8 +139,9 @@ end
 
 
 function HDSD()
-gg.alert("➣Hướng Dẫn:\n\n+ Các Bạn Hãy Vô 1 Trận Bất Kỳ Để Load Data Xong Thoát Ra Luôn Nhé. Thoát Tới Sảnh Rồi Bật GodMod Và OneHit Là Ok, Chỉ Cần Bật 1 Lần, Nếu Màn Nào Không Hoạt Động Thì Thoát Ra Sảnh Bật Lại Là Ok.\n+ Thời Gian Ải Đợi Đến 5s Rồi Tạm Dừng Trận Đấu Rồi Mới Bật...\n+ SkillVip: Không Cần Thiết. Tùy Anh Em muốn trải nghiệm, Vô Trận Có Skill Hãy Bật nhé ok..")
-MenuBattle()
+gg.alert("➣Hướng Dẫn:\n\n+ Tất Cả Chức Năng Vào Trận Mới Bật.\n+ Thời Gian Ải Đợi Đến 5s Rồi Tạm Dừng Trận Đấu Rồi Mới Bật...\n+ GodMod: Mỗi Trận Bật 1 Lần...\n+ OneHit: Chỉ Cần Bật 1 Lần Là Ok...\n+ SkillVip: Bật Khi Nào Lỗi Có Thể Bật Lại Để Được Kích Hoạt...")
+gg.alert("- Thực Ra Chỉ Cần Hack Thời Gian Ải Và OneHit Là Đủ Win Luôn..\n- Anh Em Thích Giải Trí Thì K Bật Hack Thời Gian.. Rồi Bật SkillVip GodMod V.v Đánh Skill Bay Cực Phê...")
+stopClose()
 end
 
 
