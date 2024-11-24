@@ -112,6 +112,8 @@ end
 
 
 function HackTime()
+gg.clearResults()
+gg.clearList()	
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
