@@ -112,20 +112,484 @@ end
 
 
 function HackTime()
-gg.clearResults()
-local gg = gg
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
 gg.setVisible(false)
-gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-local d = gg.prompt({"🔰Nhập Mã Ải Và Time🔰:"},{"5~6; ☛☚ ;30:117"},{"number"})
-if d == nil then gg.toast("🔥Đᴀ̃ Hᴜ̉ʏ🔥") os.exit() end
-gg.searchNumber(d[1], gg.TYPE_DWORD, false, gg.SIGN_EQUAL)
-gg.getResults(1000)
-gg.refineNumber("5~6", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-gg.processResume()
-revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("900", gg.TYPE_DWORD)
-gg.clearResults()
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+local input = gg.prompt(
+	{'🔰Điền Mã Ải Vào Đây🔰:'},
+	{[1] = "☛☚"},
+	{[1] = 'number'})
+if input == nil then gg.toast("🔥Đᴀ̃ Hᴜ̉ʏ🔥") MenuTime() end	
+r=searchValue({input[1],{"2",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+end
+
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"3",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+end
+
+
+
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"4",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+end
+
+
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"5",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+end
+
+
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"6",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+end
+
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"9",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+end
+
+
+
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"7",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+end
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"8",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+end
+
+
+
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"9",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+end
+
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"10",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+end
 gg.toast('🔥Hᴀᴄᴋ Dᴏɴᴇ🔥')
 MenuTime()
 end
@@ -133,7 +597,7 @@ end
 
 
 function HDSD1()
-gg.alert("- Hướng Dẫn:\n\n- Ải Thường:\n+ Mã Ải: 1.1 Là 1011\n+ Mã Ải: 1.2 Là 1012\n+ Mã Ải: 2.1 Là 1021\n+ Mã Ải: 2.2 Là 1022\n+ Các Màn Khác Cũng Áp Dụng Mã Như Vậy..\n\n- Ải Tinh Anh:\n+ Mã Ải: 1.1 Là 2011\n+ Mã Ải: 1.2 Là 2012\n+ Mã Ải: 2.1 Là 2021\n+ Mã Ải: 2.2 Là 2022\n+ Các Màn Khác Cũng Áp Dụng Mã Như Vậy..\n\n- Thay Mã Như Sau:\n5~6;☛☚;30:117\n5~6;1011;30:117\nVí Dụ Đây Là Ải 1.1...\n+ Thời Gian Ải Đợi Đến 5s Rồi Tạm Dừng Trận Đấu Rồi Mới Bật...")
+gg.alert("- Hướng Dẫn:\n\n- Ải Thường:\n+ Mã Ải: 1.1 Là 1011\n+ Mã Ải: 1.2 Là 1012\n+ Mã Ải: 2.1 Là 1021\n+ Mã Ải: 2.2 Là 1022\n+ Các Màn Khác Cũng Áp Dụng Mã Như Vậy..\n\n- Ải Tinh Anh:\n+ Mã Ải: 1.1 Là 2011\n+ Mã Ải: 1.2 Là 2012\n+ Mã Ải: 2.1 Là 2021\n+ Mã Ải: 2.2 Là 2022\n+ Các Màn Khác Cũng Áp Dụng Mã Như Vậy..\n\n+ Thời Gian Ải Đợi Đến 3s Trở Lên Rồi Tạm Dừng Trận Đấu Rồi Mới Bật...\n+ Từ 3-10s Bật Lúc Nào Cũng Được Nhé 😅...")
 MenuTime()
 end
 
