@@ -589,6 +589,8 @@ end end
 r=searchValue({input[1],{"10",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
 if #r == 0 then else
 searchEdit(-7*4,4, 900)
+gg.clearResults()
+gg.clearList()		
 end
 gg.toast('🔥Hᴀᴄᴋ Dᴏɴᴇ🔥')
 MenuTime()
