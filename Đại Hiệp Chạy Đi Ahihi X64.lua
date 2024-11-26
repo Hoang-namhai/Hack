@@ -12,26 +12,23 @@ end
 
 
 gg.sleep(100) 
-
-
-
-
 gg.getTargetInfo()
-gg.alert("𝙶𝙰𝙼𝙴 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 2.4                                                                                                                            𝙶𝙰𝙼𝙴 𝙽𝙰𝙼𝙴 : ĐHCĐ Ahihi 𝚇64                                                                                                                 𝚂𝙲𝚁𝙸𝙿𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 2.4 Vip                                                                                                                                 𝙻𝙰𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴 : 23/11/2024                                                                                                  Mᴀᴅᴇ Bʏ Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ                                                                                                                                Sᴄʀɪᴘᴛ Pᴜʙʟɪsʜᴇᴅ ɪɴ ©2024", "[𝙽𝙴𝚇𝚃]")
-
-
+gg.alert("𝙶𝙰𝙼𝙴 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 2.4                                                                                                                            𝙶𝙰𝙼𝙴 𝙽𝙰𝙼𝙴 : ĐHCĐ Ahihi 𝚇64                                                                                                                 𝚂𝙲𝚁𝙸𝙿𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 1.5 Vip                                                                                                                                 𝙻𝙰𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴 : 23/11/2024                                                                                                  Mᴀᴅᴇ Bʏ Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ                                                                                                                                Sᴄʀɪᴘᴛ Pᴜʙʟɪsʜᴇᴅ ɪɴ ©2024", "[𝙽𝙴𝚇𝚃]")
 gg.sleep(50)
 gg.sleep(50)
 
 
 
 
+
+
+-- ​🅼🅰🅸🅽🅼🅴🅽🆄  -- 
 function mainMenu()
 firstMenu = gg.multiChoice({
 "🔘 Mᴇɴᴜ Tɪᴍᴇ",
 "🔘 Mᴇɴᴜ Bᴀᴛᴛʟᴇ",
 "🔘 Tɪᴍᴇ Thí Luyện",
-"🔘 [Exɪᴛ]"},nil,"❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n🎮Game: ĐHCĐ Ahihi X64\n💭Version: 2.4 Vip\n------------------------------------------------")
+"🔘 [Exɪᴛ]"},nil,"❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n🎮Game: ĐHCĐ Ahihi X64\n💭Version: 2.4 \n------------------------------------------------")
 if firstMenu == nil then
 goto nill
 end
@@ -49,16 +46,27 @@ EXITALL()
 end
 ::nill::
 end
+function Back2()
+stopClose()
+end
+
+function EXITALL()
+gg.toast('♥ᴍᴏᴅ ʙʏ ʜᴀ̉ɪ sᴄʀɪᴘᴛ♥')
+gg.alert("❤️Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀")
+print('☞♥Zᴀʟᴏ: 0375574755♥☜')
+os.exit()
+end
 
 
 
+
+-- 🅱🅰🆃🆃🅻🅴 --
 function MenuBattle()
 bmenu = gg.multiChoice({
 "➣ BấtTử + OneHit ❤️",
 "➣ Skill Vip 💢",
 "➣ Speed X2 💦",
-"➣ Fix OneHit 🔥",
-"➣ Clear Fix ⚡",
+"➣ Hack Damage 🔥",
 "[Bᴀᴄᴋ]"
 }, nil,"🅜🅔🅝🅤 ​ 🅑🅐🅣🅣🅛🅔 ​ 🅥🅘🅟!\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n------------------------------------------------")
 if bmenu == nil then
@@ -74,19 +82,50 @@ if bmenu[3] then
 SpeedX2()
 end
 if bmenu[4] then
-FixOneHit()
+HackDamage()
 end
 if bmenu[5] then
-Clear()
-end
-if bmenu[6] then
 Back2()
-
-
 end
 ::ni::
 end
 
+
+
+
+
+-- ​🆃🅷🅸 ​ 🅻🆄🆈🅴🅽  --
+function TimeThiLuyen()
+Cmenu = gg.multiChoice({
+"➣ Hack Time TL 🔥",
+"➣ Hướng Dẫn Sử Dụng😎",
+"[Bᴀᴄᴋ]"
+}, nil,"🅜🅔🅝🅤 ​ 🅣🅗🅘 ​ 🅛🅤🅨🅔🅝!\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n------------------------------------------------")
+if Cmenu == nil then
+goto ni
+end
+if Cmenu[1] then
+TimeThiLuyenAll()
+end
+if Cmenu[2] then
+HDSDTL()
+end
+if Cmenu[3] then
+Back2()
+end
+::ni::
+end
+function HDSDTL()
+gg.alert("- Lưu ý:\n\n + Nếu Đang Bật Speed X2 Thì Tắt Đi Nhé...\n\n + Hoặc Vào Trận Phải Bật Chạy Time Luôn...\n\n + Vì Khi Bật X2 Speed Vào Trận Time Nó Sẽ Chạy Rất Nhanh Sẽ Quá 20s Không Hoạt Động...\n\n + Hack Time Này Chỉ Hoạt Động Khi Bật Trong Khoảng 2s -> 20s Nhé...")
+gg.alert("- Hướng Dẫn:\n\n+ Mã Ải Thí Luyện:\n+ 1. 4041\n+ 2. 4081\n+ 3. 4111\n+ 4. 4141\n+ 5. 4171\n+ 6. 4201\n\n- Thời Gian Ải Đợi Đến 2s Trở Lên Rồi Tạm Dừng Trận Đấu Rồi Mới Bật...\n- Từ 2-20s Bật Lúc Nào Cũng Được Nhé 😅...\n\n\n.")
+MenuTime()
+end
+
+
+
+
+
+--🅼🅴🅽🆄 ​ 🆃🅸🅼🅴--
 function MenuTime()
 Amenu = gg.multiChoice({
 "➣ Hack Time 💕",
@@ -100,17 +139,254 @@ if Amenu[1] then
 HackTime()
 end
 if Amenu[2] then
-HDSD1()
+HDSDTime()
 end
 if Amenu[3] then
 Back2()
+end
+::ni::
+end
+function HDSDTime()
+gg.alert("- Lưu ý:\n\n + Nếu Đang Bật Speed X2 Thì Tắt Đi Nhé...\n\n + Hoặc Vào Trận Phải Bật Chạy Time Luôn...\n\n + Vì Khi Bật X2 Speed Vào Trận Time Nó Sẽ Chạy Rất Nhanh Sẽ Quá 20s Không Hoạt Động...\n\n + Hack Time Này Chỉ Hoạt Động Khi Bật Trong Khoảng 2s -> 20s Nhé...")
+gg.alert("- Hướng Dẫn:\n\n- Ải Thường:\n+ Mã Ải: 1.1 Là 1011\n+ Mã Ải: 1.2 Là 1012\n+ Mã Ải: 2.1 Là 1021\n+ Mã Ải: 2.2 Là 1022\n+ Mã Ải: 10.1 = 1101\n+ Mã Ải: 20.1 = 1201\n+ Mã Ải: 30.1 = 1301\n+ Các Màn Khác Cũng Áp Dụng Mã Như Vậy..\n\n\n- Ải Tinh Anh:\n+ Mã Ải: 1.1 Là 2011\n+ Mã Ải: 1.2 Là 2012\n+ Mã Ải: 2.1 Là 2021\n+ Mã Ải: 2.2 Là 2022\n+ Mã Ải: 10.1 = 2101\n+ Mã Ải: 20.1 = 2201\n+ Mã Ải: 30.1 = 2301\n+ Các Màn Khác Cũng Áp Dụng Mã Như Vậy..\n\n\n- Thời Gian Ải Đợi Đến 2s Trở Lên Rồi Tạm Dừng Trận Đấu Rồi Mới Bật...\n- Từ 2-20s Bật Lúc Nào Cũng Được Nhé 😅...\n\n\n\n.")
+MenuTime()
+end
 
 
+
+
+
+
+
+
+
+
+
+
+-- ​ 🅲🅾🅳🅴 ​ 🅵🆄🅽🅲🆃🅸🅾🅽 ​ 🅱🅰🆃🆃🅻🅴 ​ --​ 🅲🅾🅳🅴 ​ 🅵🆄🅽🅲🆃🅸🅾🅽 ​ 🅱🅰🆃🆃🅻🅴 ​ --
+-- ​ 🅲🅾🅳🅴 ​ 🅵🆄🅽🅲🆃🅸🅾🅽 ​ 🅱🅰🆃🆃🅻🅴 ​ --​ 🅲🅾🅳🅴 ​ 🅵🆄🅽🅲🆃🅸🅾🅽 ​ 🅱🅰🆃🆃🅻🅴 ​ --
+-- ​ 🅲🅾🅳🅴 ​ 🅵🆄🅽🅲🆃🅸🅾🅽 ​ 🅱🅰🆃🆃🅻🅴 ​ --​ 🅲🅾🅳🅴 ​ 🅵🆄🅽🅲🆃🅸🅾🅽 ​ 🅱🅰🆃🆃🅻🅴 ​ --
+function VipVip()
+local menu = gg.alert('🅜🅔🅝🅤​ 🅞🅝🅔🅗🅘🅣 ​ 🅖🅞🅓🅜🅞🅓\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n------------------------------------------------\n\n- Function Mod:\n- OneHit + BấtTử💢\n\n- Lưu Ý:\n- Hãy Vào 1 Trận Đấu Bất Kỳ Tùy Theo Chế Độ Chơi.\n- Vào Trong Trận Đợi 3s Rồi Thoát Ra Sảnh Nhé...\n- Thoát Ra Tới Sảnh Hãy Bật Hack Nhé.. Load Hơi Lâu 1 Xíu Hãy Đợi... Hạn Chế Bật Đi Bật Lại Nhiều...', '[𝙰𝙲𝚃𝙸𝚅𝙰𝚃𝙴]', '[𝙱𝙰𝙲𝙺]')
+if menu == nil then return 
+else
+if menu == 1 then ONVip() end
+if menu == 2 then BackVip() end
 end
 ::ni::
 end
 
+function ONVip()
+valueFromClass("MonsterCfg", "0x30", true, false, gg.TYPE_DWORD)
+gg.getResults(99999)
+gg.refineNumber("2~999999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(888888, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("-1", gg.TYPE_DWORD)
+local t = gg.getResults(88888, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.clearResults()
 
+valueFromClass("MonsterCfg", "0x40", true, false, gg.TYPE_DWORD)
+gg.getResults(99999)
+gg.refineNumber("1~999999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(888888, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast('✅Activated✅')
+MenuBattle()
+end
+
+function BackVip()
+MenuBattle()
+end
+
+
+
+
+function SkillVip()
+local menu = gg.alert('🅜🅔🅝🅤 ​🅢🅚🅘🅛🅛 ​🅥🅘🅟\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n------------------------------------------------\n\n- Function Mod:\n- Skill Vip 💢\n\n- Lưu Ý:\n- Chức Năng Này Bật Ở Trong Trận Nhé.\n- Khi Nào Có 1 Vài Skill Kỹ Năng Đánh Tầm Xa Mới Bật Chức Năng Này...\n- Có Thể Bật Lại Vài Lần Để Các Chức Năng Hoạt Động Tốt.....', '[𝙰𝙲𝚃𝙸𝚅𝙰𝚃𝙴]', '[𝚁𝙴𝚂𝙴𝚃]', '[𝙱𝙰𝙲𝙺]')
+if menu == nil then return 
+else
+if menu == 1 then ONSkill() end
+if menu == 2 then OFFSkill() end
+if menu == 3 then BackSkill() end
+end
+::ni::
+end
+
+function ONSkill()
+valueFromClass("SkillRuleEventSelectRandomEnemy", "0x3C", true, false, gg.TYPE_DWORD)
+gg.getResults(99999)
+gg.refineNumber("1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(888888, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("8", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast('✅Activated✅')
+MenuBattle()
+end
+
+function OFFSkill()
+valueFromClass("SkillRuleEventSelectRandomEnemy", "0x3C", true, false, gg.TYPE_DWORD)
+gg.getResults(99999)
+gg.refineNumber("8", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(888888, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("1", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast('✅Activated✅')
+MenuBattle()
+end
+
+function BackSkill()
+MenuBattle()
+end
+
+
+
+
+
+function SpeedX2()
+local menu = gg.alert('🅜🅔🅝🅤 ​🅢🅟🅔🅔🅓 ​ 🅖🅐🅜🅔\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n------------------------------------------------\n\n- Function Mod:\n- Speed Game X2💦\n\n- Lưu Ý:\n- Chức Năng Bật Trong Trận Hay Sảnh Đều Được...\n- Nhớ Là Phải Bật Chức Năng Speed Sau Nhất Nhé..', '[𝙰𝙲𝚃𝙸𝚅𝙰𝚃𝙴]', '[𝚁𝙴𝚂𝙴𝚃]', '[𝙱𝙰𝙲𝙺]')
+if menu == nil then return 
+else
+if menu == 1 then ON() end
+if menu == 2 then OFF() end
+if menu == 3 then BackX2() end
+end
+::ni::
+end
+
+function ON()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.clearResults()
+gg.clearList()
+gg.searchNumber("4392630932057270955", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+local t = gg.getResults(88888, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.addListItems(t)
+t = nil
+gg.clearResults()
+local copy = false
+local t = gg.getListItems()
+if not copy then gg.removeListItems(t) end
+for i, v in ipairs(t) do
+	v.address = v.address + 0xfffffffffffffffc
+	if copy then v.name = v.name..' #2' end
+end
+gg.addListItems(t)
+t = nil
+copy = nil
+revert = gg.getListItems()
+local t = gg.getListItems()
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_QWORD then
+		v.value = "4515609228882214912"
+		v.freeze = true
+		v.freezeType = gg.FREEZE_NORMAL
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.toast('✅Activated✅')
+MenuBattle()
+end
+
+function OFF()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.clearResults()
+gg.clearList()
+gg.searchNumber("4392630932057270955", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+local t = gg.getResults(88888, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.addListItems(t)
+t = nil
+gg.clearResults()
+local copy = false
+local t = gg.getListItems()
+if not copy then gg.removeListItems(t) end
+for i, v in ipairs(t) do
+	v.address = v.address + 0xfffffffffffffffc
+	if copy then v.name = v.name..' #2' end
+end
+gg.addListItems(t)
+t = nil
+copy = nil
+revert = gg.getListItems()
+local t = gg.getListItems()
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_QWORD then
+		v.value = "4515609228873826304"
+		v.freeze = true
+		v.freezeType = gg.FREEZE_NORMAL
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearList()
+gg.toast('✅Activated✅')
+MenuBattle()
+end
+
+function BackX2()
+MenuBattle()
+end
+
+
+
+
+
+function HackDamage()
+local menu = gg.alert('🅜🅔🅝🅤 ​🅗🅐🅒🅚 ​🅓🅐🅜🅐🅖🅔\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n------------------------------------------------\n\n- Function Mod:\n- Hack Damage 🔥\n\n- Lưu Ý:\n- Chức Năng Bật Trong Trận Nhé...\n- Bật Và Điền Số Dame Acc Của Bạn Vào Menu Nha..\n- Chơi Tới Boss Cuối Thì Clear Đi Nhé..\n- Bắt Buộc Phải Clear Mới Tính Trận Đấu Nha, Clear Fix Ở Ngoài Menu, Ghi Số Dame Cũ Vào Là Ok..', '[𝙰𝙲𝚃𝙸𝚅𝙰𝚃𝙴]', '[𝙲𝙻𝙴𝙰𝚁]', '[𝙱𝙰𝙲𝙺]')
+if menu == nil then return 
+else
+if menu == 1 then ONHackDamage() end
+if menu == 2 then ClearHackDamage() end
+if menu == 3 then BackHackDamage() end
+end
+::ni::
+end
+
+function ONHackDamage()
+valueFromClass("ActorAttrData", "0x1C", true, false, gg.TYPE_DWORD)
+gg.getResults(99999)
+local input = gg.prompt(
+	{'🔰Lọc Giá Trị Damage🔰:'},
+	{[1] = "☛☚"},
+	{[1] = 'number'})
+gg.refineNumber(input[1], gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("888888888", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast('✅Activated✅')
+MenuBattle()
+end
+
+function ClearHackDamage()
+gg.searchNumber("888888888", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+local t = gg.getResults(88888, nil, nil, nil, nil, nil, nil, nil, nil)
+local input = gg.prompt(
+	{'🔰Clear Về Giá Trị Gốc🔰:'},
+	{[1] = "☛☚"},
+	{[1] = 'number'})
+revert = gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll(input[1], gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast('✅Activated✅')
+MenuBattle()
+end
+
+function BackHackDamage()
+MenuBattle()
+end
+
+
+
+
+
+
+
+
+
+
+-- 🅲🅾🅳🅴 ​ 🆃🅸🅼🅴 ​ 🅰🅸 ​ 🅰🅻🅻 -- 🅲🅾🅳🅴 ​ 🆃🅸🅼🅴 ​ 🅰🅸 ​ 🅰🅻🅻 -- 🅲🅾🅳🅴 ​ 🆃🅸🅼🅴 ​ 🅰🅸 ​--
+-- 🅲🅾🅳🅴 ​ 🆃🅸🅼🅴 ​ 🅰🅸 ​ 🅰🅻🅻 -- 🅲🅾🅳🅴 ​ 🆃🅸🅼🅴 ​ 🅰🅸 ​ 🅰🅻🅻 -- 🅲🅾🅳🅴 ​ 🆃🅸🅼🅴 ​ 🅰🅸 ​--
+-- 🅲🅾🅳🅴 ​ 🆃🅸🅼🅴 ​ 🅰🅸 ​ 🅰🅻🅻 -- 🅲🅾🅳🅴 ​ 🆃🅸🅼🅴 ​ 🅰🅸 ​ 🅰🅻🅻 -- 🅲🅾🅳🅴 ​ 🆃🅸🅼🅴 ​ 🅰🅸 ​--
 function HackTime()
 gg.clearResults()
 function searchValue(t,hai1,hai2)
@@ -164,7 +440,6 @@ end
 
 
 
-
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
@@ -208,9 +483,6 @@ r=searchValue({input[1],{"3",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
 if #r == 0 then else
 searchEdit(-7*4,4, 900)
 end
-
-
-
 
 
 
@@ -260,8 +532,6 @@ end
 
 
 
-
-
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
@@ -305,8 +575,6 @@ r=searchValue({input[1],{"5",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
 if #r == 0 then else
 searchEdit(-7*4,4, 900)
 end
-
-
 
 
 
@@ -356,7 +624,6 @@ end
 
 
 
-
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
@@ -400,9 +667,6 @@ r=searchValue({input[1],{"9",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
 if #r == 0 then else
 searchEdit(-7*4,4, 900)
 end
-
-
-
 
 
 
@@ -498,9 +762,6 @@ end
 
 
 
-
-
-
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
@@ -547,7 +808,6 @@ end
 
 
 
-
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
@@ -590,12 +850,11 @@ end end
 r=searchValue({input[1],{"10",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
 if #r == 0 then else
 searchEdit(-7*4,4, 900)
-gg.clearResults()	
+gg.clearResults()
 end
 
-	
-	
-	
+
+
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
@@ -640,7 +899,6 @@ if #r == 0 then else
 searchEdit(-7*4,4, 900)
 gg.clearResults()
 end
-
 
 
 
@@ -691,7 +949,6 @@ end
 
 
 
-
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
@@ -736,7 +993,6 @@ if #r == 0 then else
 searchEdit(-7*4,4, 900)
 gg.clearResults()
 end
-
 
 
 
@@ -787,9 +1043,6 @@ end
 
 
 
-
-
-
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
@@ -834,8 +1087,6 @@ if #r == 0 then else
 searchEdit(-7*4,4, 900)
 gg.clearResults()
 end
-
-
 
 
 
@@ -886,8 +1137,6 @@ end
 
 
 
-
-
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
@@ -932,8 +1181,6 @@ if #r == 0 then else
 searchEdit(-7*4,4, 900)
 gg.clearResults()
 end
-
-
 
 
 
@@ -984,8 +1231,6 @@ end
 
 
 
-
-
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
@@ -1030,8 +1275,6 @@ if #r == 0 then else
 searchEdit(-7*4,4, 900)
 gg.clearResults()
 end
-
-
 
 
 
@@ -1085,54 +1328,21 @@ end
 
 
 
-function HDSD1()
-gg.alert("- Hướng Dẫn:\n\n- Ải Thường:\n+ Mã Ải: 1.1 Là 1011\n+ Mã Ải: 1.2 Là 1012\n+ Mã Ải: 2.1 Là 1021\n+ Mã Ải: 2.2 Là 1022\n+ Các Màn Khác Cũng Áp Dụng Mã Như Vậy..\n\n- Ải Tinh Anh:\n+ Mã Ải: 1.1 Là 2011\n+ Mã Ải: 1.2 Là 2012\n+ Mã Ải: 2.1 Là 2021\n+ Mã Ải: 2.2 Là 2022\n+ Các Màn Khác Cũng Áp Dụng Mã Như Vậy..\n\n+ Thời Gian Ải Đợi Đến 3s Trở Lên Rồi Tạm Dừng Trận Đấu Rồi Mới Bật...\n+ Từ 3-20s Bật Lúc Nào Cũng Được Nhé 😅...")
-MenuTime()
-end
 
 
 
 
-function TimeThiLuyen()
-Cmenu = gg.multiChoice({
-"➣ 1. Hoa Sơn Luận Kiếm",
-"➣ 2. Quyết Chiến Tử Cấm",
-"➣ 3. Vi Công Quang Minh Đỉnh",
-"➣ 4. Huyết Chiến Hắc Mộc Nhai",
-"➣ 5. Hướng Dẫn Sử Dụng",
-"[Bᴀᴄᴋ]"
-}, nil,"🅜🅔🅝🅤 ​ 🅣🅗🅘 ​ 🅛🅤🅨🅔🅝!\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n------------------------------------------------")
-if Cmenu == nil then
-goto ni
-end
-if Cmenu[1] then
-Map1()
-end
-if Cmenu[2] then
-Map2()
-end
-if Cmenu[3] then
-Map3()
-end
-if Cmenu[4] then
-Map4()
-end
-if Cmenu[5] then
-TB()
-end
-if Cmenu[6] then
-Back2()
 
 
-end
-::ni::
-end
 
-function Map1()
+-- 🅲🅾🅳🅴 ​ 🆃🅷🅸 ​ 🅻🆄🆈🅴🅽 -- 🅲🅾🅳🅴 ​ 🆃🅷🅸 ​ 🅻🆄🆈🅴🅽 -- 🅲🅾🅳🅴 ​ 🆃🅷🅸 ​ 🅻🆄🆈🅴🅽 --
+-- 🅲🅾🅳🅴 ​ 🆃🅷🅸 ​ 🅻🆄🆈🅴🅽 -- 🅲🅾🅳🅴 ​ 🆃🅷🅸 ​ 🅻🆄🆈🅴🅽 -- 🅲🅾🅳🅴 ​ 🆃🅷🅸 ​ 🅻🆄🆈🅴🅽 --
+-- 🅲🅾🅳🅴 ​ 🆃🅷🅸 ​ 🅻🆄🆈🅴🅽 -- 🅲🅾🅳🅴 ​ 🆃🅷🅸 ​ 🅻🆄🆈🅴🅽 -- 🅲🅾🅳🅴 ​ 🆃🅷🅸 ​ 🅻🆄🆈🅴🅽 --
+function TimeThiLuyenAll()
+gg.clearResults()
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
-gg.clearResults()
 gg.setVisible(false)
 gg.searchNumber(t[1], hai2)
 local r = gg.getResults(99999999)
@@ -1158,7 +1368,6 @@ end
 ::HoangNamHai::
 return rt
 end
-
 function searchEdit(hnh1,hnh2,hnh3)
 if #r>0 then
 tt={}
@@ -1170,18 +1379,21 @@ tt[ii].value=hnh3
 end
 gg.setValues(tt)
 end end
-
-
-r=searchValue({"4041",{"5",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+local input = gg.prompt(
+	{'🔰Điền Mã Ải Vào Đây🔰:'},
+	{[1] = "☛☚"},
+	{[1] = 'number'})
+if input == nil then gg.toast("🔥Đᴀ̃ Hᴜ̉ʏ🔥") MenuTime() end	
+r=searchValue({input[1],{"2",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
 if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.toast('✅Activated✅')
+searchEdit(-7*4,4, 900)
+end
+
+
 
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
-gg.clearResults()
 gg.setVisible(false)
 gg.searchNumber(t[1], hai2)
 local r = gg.getResults(99999999)
@@ -1207,7 +1419,6 @@ end
 ::HoangNamHai::
 return rt
 end
-
 function searchEdit(hnh1,hnh2,hnh3)
 if #r>0 then
 tt={}
@@ -1219,25 +1430,16 @@ tt[ii].value=hnh3
 end
 gg.setValues(tt)
 end end
-
-
-r=searchValue({"4041",{"6",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+r=searchValue({input[1],{"3",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
 if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.alert('✅Activated✅')
-stopClose()
-end
-end
+searchEdit(-7*4,4, 900)
 end
 
 
 
-function Map2()
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
-gg.clearResults()
 gg.setVisible(false)
 gg.searchNumber(t[1], hai2)
 local r = gg.getResults(99999999)
@@ -1263,7 +1465,6 @@ end
 ::HoangNamHai::
 return rt
 end
-
 function searchEdit(hnh1,hnh2,hnh3)
 if #r>0 then
 tt={}
@@ -1275,18 +1476,16 @@ tt[ii].value=hnh3
 end
 gg.setValues(tt)
 end end
-
-
-r=searchValue({"4081",{"5",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+r=searchValue({input[1],{"4",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
 if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.toast('✅Activated✅')
+searchEdit(-7*4,4, 900)
+end
+
+
 
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
-gg.clearResults()
 gg.setVisible(false)
 gg.searchNumber(t[1], hai2)
 local r = gg.getResults(99999999)
@@ -1312,7 +1511,6 @@ end
 ::HoangNamHai::
 return rt
 end
-
 function searchEdit(hnh1,hnh2,hnh3)
 if #r>0 then
 tt={}
@@ -1324,24 +1522,16 @@ tt[ii].value=hnh3
 end
 gg.setValues(tt)
 end end
-
-
-r=searchValue({"4081",{"6",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+r=searchValue({input[1],{"5",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
 if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.alert('✅Activated✅')
-stopClose()
-end
-end
+searchEdit(-7*4,4, 900)
 end
 
 
-function Map3()
+
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
-gg.clearResults()
 gg.setVisible(false)
 gg.searchNumber(t[1], hai2)
 local r = gg.getResults(99999999)
@@ -1367,7 +1557,6 @@ end
 ::HoangNamHai::
 return rt
 end
-
 function searchEdit(hnh1,hnh2,hnh3)
 if #r>0 then
 tt={}
@@ -1379,18 +1568,16 @@ tt[ii].value=hnh3
 end
 gg.setValues(tt)
 end end
-
-
-r=searchValue({"4111",{"5",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+r=searchValue({input[1],{"6",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
 if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.toast('✅Activated✅')
+searchEdit(-7*4,4, 900)
+end
+
+
 
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
-gg.clearResults()
 gg.setVisible(false)
 gg.searchNumber(t[1], hai2)
 local r = gg.getResults(99999999)
@@ -1416,7 +1603,6 @@ end
 ::HoangNamHai::
 return rt
 end
-
 function searchEdit(hnh1,hnh2,hnh3)
 if #r>0 then
 tt={}
@@ -1428,25 +1614,16 @@ tt[ii].value=hnh3
 end
 gg.setValues(tt)
 end end
-
-
-r=searchValue({"4111",{"6",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+r=searchValue({input[1],{"9",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
 if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.alert('✅Activated✅')
-stopClose()
-end
-end
+searchEdit(-7*4,4, 900)
 end
 
 
 
-function Map4()
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
-gg.clearResults()
 gg.setVisible(false)
 gg.searchNumber(t[1], hai2)
 local r = gg.getResults(99999999)
@@ -1472,7 +1649,6 @@ end
 ::HoangNamHai::
 return rt
 end
-
 function searchEdit(hnh1,hnh2,hnh3)
 if #r>0 then
 tt={}
@@ -1484,19 +1660,16 @@ tt[ii].value=hnh3
 end
 gg.setValues(tt)
 end end
-
-
-r=searchValue({"4141",{"5",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+r=searchValue({input[1],{"7",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
 if #r == 0 then else
-searchEdit(-7*4,4, 250)
-gg.clearResults()
-gg.toast('✅Activated✅')
+searchEdit(-7*4,4, 900)
+end
+
 
 
 function searchValue(t,hai1,hai2)
 rt={}
 gg.setRanges(hai1)
-gg.clearResults()
 gg.setVisible(false)
 gg.searchNumber(t[1], hai2)
 local r = gg.getResults(99999999)
@@ -1522,7 +1695,6 @@ end
 ::HoangNamHai::
 return rt
 end
-
 function searchEdit(hnh1,hnh2,hnh3)
 if #r>0 then
 tt={}
@@ -1534,180 +1706,580 @@ tt[ii].value=hnh3
 end
 gg.setValues(tt)
 end end
-
-
-r=searchValue({"4141",{"6",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+r=searchValue({input[1],{"8",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
 if #r == 0 then else
-searchEdit(-7*4,4, 250)
+searchEdit(-7*4,4, 900)
+end
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"9",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+end
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"10",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
 gg.clearResults()
-gg.alert('✅Activated✅')
-stopClose()
-end
-end
 end
 
 
-function TB()
-gg.alert("- Hướng Dẫn:\n\n- ☛Đợi Đến Giây Thứ 5 Rồi Mới Bật Nhé☚\n- Muốn Edit lại số time hãy LH Zalo: 0375574755🔧")
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"11",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+gg.clearResults()
+end
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"12",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+gg.clearResults()
+end
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"13",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+gg.clearResults()
+end
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"14",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+gg.clearResults()
+end
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"15",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+gg.clearResults()
+end
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"16",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+gg.clearResults()
+end
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"17",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+gg.clearResults()
+end
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"18",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+gg.clearResults()
+end
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"19",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+gg.clearResults()
+end
+
+
+
+function searchValue(t,hai1,hai2)
+rt={}
+gg.setRanges(hai1)
+gg.setVisible(false)
+gg.searchNumber(t[1], hai2)
+local r = gg.getResults(99999999)
+if #r==0 then goto HoangNamHai end
+for it=2,#t do
+for i=1,#r do
+r[i].address=r[i].address+t[it][2]
+end
+local rr=gg.getValues(r)
+tt={}
+for i=1,#rr do
+   if rr[i].value== t[it][1] then
+   ii=#tt+1
+   tt[ii]={}
+   tt[ii].address=rr[i].address-t[it][2]
+   tt[ii].flags=4
+   end
+end
+if #tt==0 then goto HoangNamHai end
+r=gg.getValues(tt)
+if it==#t then rt=r goto HoangNamHai end
+end
+::HoangNamHai::
+return rt
+end
+function searchEdit(hnh1,hnh2,hnh3)
+if #r>0 then
+tt={}
+for i=1,#r do
+ii=#tt+1 tt[ii]={}
+tt[ii].address=r[i].address +hnh1
+tt[ii].flags=hnh2
+tt[ii].value=hnh3
+end
+gg.setValues(tt)
+end end
+r=searchValue({input[1],{"20",-7*4}},gg.REGION_ANONYMOUS,gg.TYPE_DWORD)
+if #r == 0 then else
+searchEdit(-7*4,4, 900)
+gg.clearResults()
+end
+gg.toast('🔥Hᴀᴄᴋ Dᴏɴᴇ🔥')
 TimeThiLuyen()
 end
 
 
 
 
-function VipVip()
-local menu = gg.alert('🅜🅔🅝🅤​ 🅞🅝🅔🅗🅘🅣 ​ 🅖🅞🅓🅜🅞🅓\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n------------------------------------------------\n\n- Function Mod:\n- OneHit + BấtTử💢\n\n- Lưu Ý:\n- Hãy Vào 1 Trận Đấu Bất Kỳ Tùy Theo Chế Độ Chơi.\n- Vào Trong Trận Đợi 3s Rồi Thoát Ra Sảnh Nhé...\n- Thoát Ra Tới Sảnh Hãy Bật Hack Nhé.. Load Hơi Lâu 1 Xíu Hãy Đợi... Hạn Chế Bật Đi Bật Lại Nhiều...', '๑ACTIVATE๑')
-if menu == 0 then 
-elseif 
---true, false
-menu == 1 then
-
---valueFromClass("MonsterCfg", "0x30", true, false, gg.TYPE_DWORD)
---gg.getResults(99999)
---gg.refineNumber("2~999999999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
---revert = gg.getResults(888888, nil, nil, nil, nil, nil, nil, nil, nil)
---gg.editAll("1", gg.TYPE_DWORD)
---gg.clearResults()
-
-valueFromClass("MonsterCfg", "0x30", true, false, gg.TYPE_DWORD)
-gg.getResults(99999)
-gg.refineNumber("2~999999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-revert = gg.getResults(888888, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("-1", gg.TYPE_DWORD)
-local t = gg.getResults(88888, nil, nil, nil, nil, nil, nil, nil, nil)
-
-
-valueFromClass("MonsterCfg", "0x40", true, false, gg.TYPE_DWORD)
-gg.getResults(99999)
-gg.refineNumber("1~999999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-revert = gg.getResults(888888, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("0", gg.TYPE_DWORD)
-
-gg.clearResults()
-
-
-
-gg.clearResults()
-gg.toast('✅Activated✅')
-MenuBattle()
-end
-end
-
-
-
-
-function SkillVip()
-local menu = gg.alert('🅜🅔🅝🅤 ​🅢🅚🅘🅛🅛 ​🅥🅘🅟\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n------------------------------------------------\n\n- Function Mod:\n- Skill Vip 💢\n\n- Lưu Ý:\n- Chức Năng Này Bật Ở Trong Trận Nhé.\n- Khi Nào Có 1 Vài Skill Kỹ Năng Đánh Tầm Xa Mới Bật Chức Năng Này...\n- Có Thể Bật Lại Vài Lần Để Các Chức Năng Hoạt Động Tốt.....', '๑ACTIVATE๑,๑Back๑')
-if menu == 0 then 
-elseif 
---true, false
-menu == 1 then
-valueFromClass("SkillRuleEventSelectRandomEnemy", "0x3C", true, false, gg.TYPE_DWORD)
-gg.getResults(99999)
-gg.refineNumber("1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-revert = gg.getResults(888888, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("8", gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast('✅Activated✅')
-MenuBattle()
-end
-end
-
-
-
-function SpeedX2()
-local menu = gg.alert('🅜🅔🅝🅤 ​🅢🅟🅔🅔🅓 ​ 🅖🅐🅜🅔\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n------------------------------------------------\n\n- Function Mod:\n- Speed Game X2💦\n\n- Lưu Ý:\n- Chức Năng Bật Trong Trận Hay Sảnh Đều Được...\n- Nhớ Là Phải Bật Chức Năng Speed Sau Nhất Nhé..', '๑ACTIVATE๑')
-if menu == 0 then 
-elseif 
---true, false
-menu == 1 then
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.clearResults()
-gg.clearList()
-gg.searchNumber("4392630932057270955", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-local t = gg.getResults(88888, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.addListItems(t)
-t = nil
-gg.clearResults()
-local copy = false
-local t = gg.getListItems()
-if not copy then gg.removeListItems(t) end
-for i, v in ipairs(t) do
-	v.address = v.address + 0xfffffffffffffffc
-	if copy then v.name = v.name..' #2' end
-end
-gg.addListItems(t)
-t = nil
-copy = nil
-revert = gg.getListItems()
-local t = gg.getListItems()
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_QWORD then
-		v.value = "4515609228882214912"
-		v.freeze = true
-		v.freezeType = gg.FREEZE_NORMAL
-	end
-end
-gg.addListItems(t)
-t = nil
-gg.toast('✅Activated✅')
-MenuBattle()
-end
-end
-
-
-
-
-function FixOneHit()
-local menu = gg.alert('🅜🅔🅝🅤 ​🅕🅘🅧 ​ 🅞🅝🅔🅗🅘🅣\n❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n------------------------------------------------\n\n- Function Mod:\n- Fix OneHit 🔥\n\n- Lưu Ý:\n- Chức Năng Bật Trong Trận Nhé...\n- Bật Và Điền Số Dame Acc Của Bạn Vào Menu Nha..\n- Chơi Tới Boss Cuối Thì Clear Đi Nhé..\n- Bắt Buộc Phải Clear Mới Tính Trận Đấu Nha, Clear Fix Ở Ngoài Menu, Ghi Số Dame Cũ Vào Là Ok..', '๑ACTIVATE๑')
-if menu == 0 then 
-elseif 
---true, false
-menu == 1 then
-valueFromClass("ActorAttrData", "0x1C", true, false, gg.TYPE_DWORD)
-gg.getResults(99999)
-local input = gg.prompt(
-	{'🔰Lọc Giá Trị Damage🔰:'},
-	{[1] = "☛☚"},
-	{[1] = 'number'}
-)
-gg.refineNumber(input[1], gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-revert = gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("888888888", gg.TYPE_DWORD)
-gg.clearResults()
-gg.toast('✅Activated✅')
-MenuBattle()
-end
-end
-
-function Clear()
-gg.searchNumber("888888888", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
-local t = gg.getResults(88888, nil, nil, nil, nil, nil, nil, nil, nil)
-local input = gg.prompt(
-	{'🔰Clear Về Giá Trị Gốc🔰:'},
-	{[1] = "☛☚"},
-	{[1] = 'number'}
-)
-
-local t = gg.getResults(999, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.addListItems(t)
-for i, v in ipairs(t) do
-	if v.flags == gg.TYPE_DWORD then
-		v.value = input[1]
-		v.freeze = true
-		v.freezeType = gg.FREEZE_NORMAL
-	end
-end
-gg.addListItems(t)
-gg.clearResults()
-gg.clearList()
-MenuBattle()
-end
-
-
-function Back2()
-stopClose()
-end
 
 
 
@@ -1716,12 +2288,289 @@ end
 
 
 
-function EXITALL()
-gg.toast('♥ᴍᴏᴅ ʙʏ ʜᴀ̉ɪ sᴄʀɪᴘᴛ♥')
-gg.alert("❤️Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀")
-print('☞♥Zᴀʟᴏ: 0375574755♥☜')
-os.exit()
-end
+
+-- (•‿•)(・∀・)◉‿◉｡◕‿◕｡(. ❛ ᴗ ❛.)(θ‿θ)(✷‿✷)(◔‿◔)(◕ᴗ◕✿)(ʘᴗʘ✿)(人 •͈ᴗ•͈)(◍•ᴗ•◍)( ╹▽╹ )(≧▽≦)(☆▽☆)(✯ᴗ✯)( ╹▽╹ )(≧▽≦)(☆▽☆)(✯ᴗ✯)ಡ ͜ ʖ ಡ(ㆁωㆁ)(*´ω｀*)( ꈍᴗꈍ)(✿^‿^)^_________^(◡ ω ◡)( ´◡‿ゝ◡`)(｡•̀ᴗ-)✧✧◝(⁰▿⁰)◜✧(◠‿・)—☆٩(◕‿◕｡)۶(´ ∀ ` *)(* ^ ω ^)(o^▽^o)(￣ω￣)(o･ω･o)ヽ(*・ω・)ﾉヽ(*・ω・)ﾉ(o´▽`o)(o_ _)ﾉ彡☆(o_ _)ﾉ彡☆(＠＾◡＾)ヽ(*・ω・)ﾉ(o_ _)ﾉ彡☆(^人^)(o´▽`o)(*´▽`*)｡ﾟ( ﾟ^∀^ﾟ)ﾟ｡( ´ ω ` )(((o(*°▽°*)o)))(≧◡≦)(⌒ω⌒)(＾▽＾)(´• ω •`)(o´∀`o)∑d(°∀°d)╰(▔∀▔)╯(─‿‿─)(*^‿^*)ヽ(o^ ^o)ﾉ(✯◡✯)(◕‿◕)(*≧ω≦*)ヽ(o＾▽＾o)ノ＼(≧▽≦)／(⌒‿⌒)(☆▽☆)(*°▽°*)(✧ω✧)ヽ(*⌒▽⌒*)ﾉ(´｡• ᵕ •｡`)ヽ(>∀<☆)ノ╰(*´︶`*)╯(￣▽￣)( ´ ▽ ` )o(≧▽≦)o(☆ω☆)(っ˘ω˘ς )＼(￣▽￣)／(*¯︶¯*)＼(＾▽＾)／٩(◕‿◕)۶(o˘◡˘o)(╯✧▽✧)╯(〃＾▽＾〃)\(^ヮ^)/\(★ω★)/o(>ω<)oo( ❛ᴗ❛ )o｡ﾟ(TヮT)ﾟ｡( ‾́ ◡ ‾́ )(๑˘︶˘๑)(๑˃ᴗ˂)ﻭ(b ᵔ▽ᵔ)b(ﾉ´ヮ`)ﾉ*: ･ﾟ( ˙꒳​˙ )°˖✧◝(⁰▿⁰)◜✧˖°(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧(￢‿￢ )(⁀ᗢ⁀)(.❛ ᴗ ❛.)(„• ֊ •„)(¬‿¬ )(˵¯̴͒ꇴ¯̴͒˵)✧(σ๑˃̶̀ꇴ˂̶́)σ٩̋(๑˃́ꇴ˂̀๑)(ꐦ ´͈ ᗨ `͈ )(◍˃̶ᗜ˂̶◍)ﾉ”(っ˘ڡ˘ς)(≧ڡ≦*)°˖✧◝(⁰▿⁰)◜✧˖°(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧( ˙꒳​˙ )(ﾉ´ヮ`)ﾉ*: ･ﾟ｡ﾟ(TヮT)ﾟ｡o( ❛ᴗ❛ )oo(>ω<)o\(★ω★)/٩(◕‿◕)۶＼(＾▽＾)／(⊃｡•́‿•̀｡)⊃ʕっ•ᴥ•ʔっ(⊃ • ʖ̫ • )⊃(づ￣ ³￣)づ(づ￣ ³￣)づ༼ つ ◕‿◕ ༽つ(づ｡◕‿‿◕｡)づ⊂((・▽・))⊃(つ≧▽≦)つ(つ✧ω✧)つ(っ.❛ ᴗ ❛.)っ～(つˆДˆ)つ｡☆ლ(´ ❥ `ლ)⊂(•‿•⊂ )*.✧⊂(´･◡･⊂ )∘˚˳°⊂(･ω･*⊂)⊂(・﹏・⊂)⊂(・▽・⊂)⊂(◉‿◉)つo((*^▽^*))o╰(*´︶`*)╯╰(＾3＾)╯╰(⸝⸝⸝´꒳`⸝⸝⸝)╯♡(˃͈ દ ˂͈ ༶ )╰(*´︶`*)╯╰(＾3＾)╯╰(⸝⸝⸝´꒳`⸝⸝⸝)╯♡(˃͈ દ ˂͈ ༶ )ヾ(˙❥˙)ﾉ＼(^o^)／ლ(・﹏・ლ)ლ(◕ω◕ლ)(/･ω･(-ω-)(･ω･)つ⊂(･ω･)( T_T)＼(^-^ )(･–･) \(･◡･)/(づ￣ ³￣)づ(つ≧▽≦)つ(つ✧ω✧)つ(づ ◕‿◕ )づ(⊃｡•́‿•̀｡)⊃(つ . •́ _ʖ •̀ .)つ(っಠ‿ಠ)っ(づ◡﹏◡)づ⊂(´• ω •`⊂)⊂(･ω･*⊂)⊂(￣▽￣)⊃⊂( ´ ▽ ` )⊃(⊃｡•́‿•̀｡)⊃(つ . •́ _ʖ •̀ .)つ(っಠ‿ಠ)っ(づ◡﹏◡)づ⊂(´• ω •`⊂)⊂(･ω･*⊂)⊂(￣▽￣)⊃⊂( ´ ▽ ` )⊃(*•̀ᴗ•́*)و ̑̑╭( ･ㅂ･)و ̑̑(๑•̀ㅂ•́)و(๑˃̵ᴗ˂̵)و╭( ･ㅂ･)و( •̀ᄇ• ́)ﻭ✧(ര̀ᴗര́)و ̑̑╭(♡･ㅂ･)و ̑̑◝( ′ㅂ`)و ̑̑╭( ･ㅂ･)و ̑̑ ＂╭( ･ㅂ･)و )))╭(๑ ॔ㅂ ਂ ॓)و ̑̑( ⁼̴̤̆ ළ̉ ⁼̴̤̆)و ̑̑(๑˃̵ᴗ˂̵)و(๑•̀ㅂ•́)و✧꒰๑͒•̀ुꇵ͒•꒱و ̑̑ଘ꒰ ๑ ˃̶ ᴗ ᵒ̴̶̷๑꒱و ̑̑(ฅ⁍̴̀◊⁍̴́)و ̑̑(•́⌄•́๑)૭✧(•̀ᴗ•́)൬༉!(•̀ᴗ•́)و ̑̑(•̀o•́)ง٩(｡•ω•｡)و٩(⸝⸝⸝◕ั ௰ ◕ั⸝⸝⸝ )و٩(✪ꀾ⍟༶)و୧( ⁼̴̶̤̀ω⁼̴̶̤́ )૭٩(˃̶͈̀௰˂̶͈́)و٩( ‘ω’ )و(•́⌄•́๑)૭✧ヾ(・ω・)メ(・ω・)ノヽ(∀° )人( °∀)ノヽ( ⌒o⌒)人(⌒-⌒ )ﾉ(*^ω^)八(⌒▽⌒)八(-‿‿- )ヽ＼(＾∀＾)メ(＾∀＾)ノヾ(￣ー￣(≧ω≦*)ゝヽ( ⌒ω⌒)人(=^‥^= )ﾉヽ(≧◡≦)八(o^ ^o)ノ(*・∀・)爻(・∀・*)(＾• ω •＾)(＾• ω •＾)(＾• ω •＾)(＾• ω •＾)(＾• ω •＾)(＾• ω •＾)(＾• ω •＾)(＾• ω •＾)ଲ(ⓛ ω ⓛ)ଲヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )ヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥(•‿•)(・∀・)◉‿◉｡◕‿◕｡(. ❛ ᴗ ❛.)(θ‿θ)(✷‿✷)(◔‿◔)(◕ᴗ◕✿)(ʘᴗʘ✿)(人 •͈ᴗ•͈)(◍•ᴗ•◍)( ╹▽╹ )(≧▽≦)(☆▽☆)(✯ᴗ✯)( ╹▽╹ )(≧▽≦)(☆▽☆)(✯ᴗ✯)ಡ ͜ ʖ ಡ(ㆁωㆁ)(*´ω｀*)( ꈍᴗꈍ)(✿^‿^)^_________^(◡ ω ◡)( ´◡‿ゝ◡`)(｡•̀ᴗ-)✧✧◝(⁰▿⁰)◜✧(◠‿・)—☆٩(◕‿◕｡)۶(´ ∀ ` *)(* ^ ω ^)(o^▽^o)(￣ω￣)(o･ω･o)ヽ(*・ω・)ﾉヽ(*・ω・)ﾉ(o´▽`o)(o_ _)ﾉ彡☆(o_ _)ﾉ彡☆(＠＾◡＾)ヽ(*・ω・)ﾉ(o_ _)ﾉ彡☆(^人^)(o´▽`o)(*´▽`*)｡ﾟ( ﾟ^∀^ﾟ)ﾟ｡( ´ ω ` )(((o(*°▽°*)o)))(≧◡≦)(⌒ω⌒)(＾▽＾)(´• ω •`)(o´∀`o)∑d(°∀°d)╰(▔∀▔)╯(─‿‿─)(*^‿^*)ヽ(o^ ^o)ﾉ(✯◡✯)(◕‿◕)(*≧ω≦*)ヽ(o＾▽＾o)ノ＼(≧▽≦)／(⌒‿⌒)(☆▽☆)(*°▽°*)(✧ω✧)ヽ(*⌒▽⌒*)ﾉ(´｡• ᵕ •｡`)ヽ(>∀<☆)ノ╰(*´︶`*)╯(￣▽￣)( ´ ▽ ` )o(≧▽≦)o(☆ω☆)(っ˘ω˘ς )＼(￣▽￣)／(*¯︶¯*)＼(＾▽＾)／٩(◕‿◕)۶(o˘◡˘o)(╯✧▽✧)╯(〃＾▽＾〃)\(^ヮ^)/\(★ω★)/o(>ω<)oo( ❛ᴗ❛ )o｡ﾟ(TヮT)ﾟ｡( ‾́ ◡ ‾́ )(๑˘︶˘๑)(๑˃ᴗ˂)ﻭ(b ᵔ▽ᵔ)b(ﾉ´ヮ`)ﾉ*: ･ﾟ( ˙꒳​˙ )°˖✧◝(⁰▿⁰)◜✧˖°(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧(￢‿￢ )(⁀ᗢ⁀)(.❛ ᴗ ❛.)(„• ֊ •„)(¬‿¬ )(˵¯̴͒ꇴ¯̴͒˵)✧(σ๑˃̶̀ꇴ˂̶́)σ٩̋(๑˃́ꇴ˂̀๑)(ꐦ ´͈ ᗨ `͈ )(◍˃̶ᗜ˂̶◍)ﾉ”(っ˘ڡ˘ς)(≧ڡ≦*)°˖✧◝(⁰▿⁰)◜✧˖°(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧( ˙꒳​˙ )(ﾉ´ヮ`)ﾉ*: ･ﾟ｡ﾟ(TヮT)ﾟ｡o( ❛ᴗ❛ )oo(>ω<)o\(★ω★)/٩(◕‿◕)۶＼(＾▽＾)／(⊃｡•́‿•̀｡)⊃ʕっ•ᴥ•ʔっ(⊃ • ʖ̫ • )⊃(づ￣ ³￣)づ(づ￣ ³￣)づ༼ つ ◕‿◕ ༽つ(づ｡◕‿‿◕｡)づ⊂((・▽・))⊃(つ≧▽≦)つ(つ✧ω✧)つ(っ.❛ ᴗ ❛.)っ～(つˆДˆ)つ｡☆ლ(´ ❥ `ლ)⊂(•‿•⊂ )*.✧⊂(´･◡･⊂ )∘˚˳°⊂(･ω･*⊂)⊂(・﹏・⊂)⊂(・▽・⊂)⊂(◉‿◉)つo((*^▽^*))o╰(*´︶`*)╯╰(＾3＾)╯╰(⸝⸝⸝´꒳`⸝⸝⸝)╯♡(˃͈ દ ˂͈ ༶ )╰(*´︶`*)╯╰(＾3＾)╯╰(⸝⸝⸝´꒳`⸝⸝⸝)╯♡(˃͈ દ ˂͈ ༶ )ヾ(˙❥˙)ﾉ＼(^o^)／ლ(・﹏・ლ)ლ(◕ω◕ლ)(/･ω･(-ω-)(･ω･)つ⊂(･ω･)( T_T)＼(^-^ )(･–･) \(･◡･)/(づ￣ ³￣)づ(つ≧▽≦)つ(つ✧ω✧)つ(づ ◕‿◕ )づ(⊃｡•́‿•̀｡)⊃(つ . •́ _ʖ •̀ .)つ(っಠ‿ಠ)っ(づ◡﹏◡)づ⊂(´• ω •`⊂)⊂(･ω･*⊂)⊂(￣▽￣)⊃⊂( ´ ▽ ` )⊃(⊃｡•́‿•̀｡)⊃(つ . •́ _ʖ •̀ .)つ(っಠ‿ಠ)っ(づ◡﹏◡)づ⊂(´• ω •`⊂)⊂(･ω･*⊂)⊂(￣▽￣)⊃⊂( ´ ▽ ` )⊃(*•̀ᴗ•́*)و ̑̑╭( ･ㅂ･)و ̑̑(๑•̀ㅂ•́)و(๑˃̵ᴗ˂̵)و╭( ･ㅂ･)و( •̀ᄇ• ́)ﻭ✧(ര̀ᴗര́)و ̑̑╭(♡･ㅂ･)و ̑̑◝( ′ㅂ`)و ̑̑╭( ･ㅂ･)و ̑̑ ＂╭( ･ㅂ･)و )))╭(๑ ॔ㅂ ਂ ॓)و ̑̑( ⁼̴̤̆ ළ̉ ⁼̴̤̆)و ̑̑(๑˃̵ᴗ˂̵)و(๑•̀ㅂ•́)و✧꒰๑͒•̀ुꇵ͒•꒱و ̑̑ଘ꒰ ๑ ˃̶ ᴗ ᵒ̴̶̷๑꒱و ̑̑(ฅ⁍̴̀◊⁍̴́)و ̑̑(•́⌄•́๑)૭✧(•̀ᴗ•́)൬༉!(•̀ᴗ•́)و ̑̑(•̀o•́)ง٩(｡•ω•｡)و٩(⸝⸝⸝◕ั ௰ ◕ั⸝⸝⸝ )و٩(✪ꀾ⍟༶)و୧( ⁼̴̶̤̀ω⁼̴̶̤́ )૭٩(˃̶͈̀௰˂̶͈́)و٩( ‘ω’ )و(•́⌄•́๑)૭✧ヾ(・ω・)メ(・ω・)ノヽ(∀° )人( °∀)ノヽ( ⌒o⌒)人(⌒-⌒ )ﾉ(*^ω^)八(⌒▽⌒)八(-‿‿- )ヽ＼(＾∀＾)メ(＾∀＾)ノヾ(￣ー￣(≧ω≦*)ゝヽ( ⌒ω⌒)人(=^‥^= )ﾉヽ(≧◡≦)八(o^ ^o)ノ(*・∀・)爻(・∀・*)(＾• ω •＾)(＾• ω •＾)(＾• ω •＾)(＾• ω •＾)(＾• ω •＾)(＾• ω •＾)(＾• ω •＾)(＾• ω •＾)ଲ(ⓛ ω ⓛ)ଲヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”ヾ(=`ω´=)ノ”(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^=◕ᴥ◕=^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◔ᴥ◔^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^)(^◕ᴥ◕^༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ༼ つ ◕‿◕ ༽つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ⊂(◉‿◉)つ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )づ(づ ◕‿◕ )ヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥˙)ﾉヾ(˙❥
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
