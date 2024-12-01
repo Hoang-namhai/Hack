@@ -21,6 +21,11 @@ gg.alert("- Lưu ý: Bật Hack Xong Mọi Người Vào Shop Thể Lực Và �
 
 
 
+
+
+
+
+
 -- 🅱🅰🆃🆃🅻🅴 --
 function Main()
 HNHH = gg.multiChoice({
@@ -137,6 +142,7 @@ searchEdit(2*4,1, "h 01")
 end
 gg.alert('✅𝙵𝚁𝙴𝙴 𝚂𝙷𝙾𝙿 𝙰𝙻𝙻✅')
 gg.clearResults()
+end
 
 
 function EXITALL()
@@ -155,4 +161,3 @@ if XGCK == 1 then
 Main()
 end
 end
-
