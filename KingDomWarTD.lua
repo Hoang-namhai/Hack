@@ -16,7 +16,7 @@ gg.sleep(50)
 
 
 
-gg.alert("- Lưu ý: Bật Hack Xong Mọi Người Vào Shop Thể Lực Và Ấn Mua Gói Thể Lực Đầu Tiên Có 4 Chiếc Giày. Để Kích Hoạt Thành Công Nhé🎉...\n\n- Note: After turning on Hack, everyone goes to the Fitness Shop and clicks Buy First Fitness Package with 4 Shoes. For Successful Activation🎉...")
+gg.alert("- Lưu ý: Bật Hack Xong Mọi Người Vào Shop Thể Lực Và Ấn Mua Gói Thể Lực Đầu Tiên Có 30 Chiếc Giày. Để Kích Hoạt Thành Công Nhé🎉...\n\n- Note: After turning on Hack, everyone goes to the Fitness Shop and clicks Buy First Fitness Package with 30 Shoes. For Successful Activation🎉...")
 
 
 
