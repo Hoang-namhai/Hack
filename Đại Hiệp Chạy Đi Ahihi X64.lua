@@ -2,7 +2,11 @@ userMode = 2 -- 1 = Developer mode, 2 = user mode
 
 
 
-
+local info = gg.getTargetPackage() 
+if info == "com.dodjoy.mjdx.t9" then 
+else
+os.exit(print("♥𝑯𝒂̉𝒊 𝑺𝒄𝒓𝒊𝒑𝒕☠️\n \n• Vᴜɪ Lᴏ̀ɴɢ Cʜᴏ̣ɴ Đᴜ́ɴɢ Tʀᴏ̀ Cʜᴏ̛ɪ Cᴜ̉ᴀ Sᴄʀɪᴘᴛ •\n• ʜᴏᴀ̣̆ᴄ ᴄᴀ̣̂ᴘ ɴʜᴀ̣̂ᴛ ꜱᴄʀɪᴘᴛ ʙᴀ̉ɴ ᴜᴘᴅᴀᴛᴇ ᴍᴏ̛́ɪ ɴʜᴀ̂́ᴛ... •\n • Liên Hệ Zalo: 0375574755📱 •"))
+end 
 
 
 
@@ -273,14 +277,14 @@ local input = gg.prompt(
 	{[1] = 'number'})
 gg.refineNumber(input[1], gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
-gg.editAll("888888888", gg.TYPE_DWORD)
+gg.editAll("5060902", gg.TYPE_DWORD)
 gg.clearResults()
 gg.toast('✅Activated✅')
 MenuBattle()
 end
 
 function ClearHackDamage()
-gg.searchNumber("888888888", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.searchNumber("5060902", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
 local t = gg.getResults(88888, nil, nil, nil, nil, nil, nil, nil, nil)
 local input = gg.prompt(
 	{'🔰Clear Về Giá Trị Gốc🔰:'},
