@@ -19,6 +19,7 @@ gg.sleep(50)
 
 
 
+gg.alert("Mình Mới Update Bản Mới Nếu Sài Có Lỗi Gì Hãy Liên Hệ Mình")
 
 function MenuBattle()
 local HNHH = gg.choice({
