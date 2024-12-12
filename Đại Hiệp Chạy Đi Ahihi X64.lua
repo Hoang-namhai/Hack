@@ -20,6 +20,7 @@ local HNHH = gg.choice({
 "➣ [™𝚂𝙺𝙸𝙻𝙻 𝚅𝙸𝙿™]💢",
 "➣ [™𝚂𝙿𝙴𝙴𝙳 𝚇𝟸™]💦",
 "➣ [™𝙷𝙰𝙲𝙺 𝙳𝙰𝙼𝙰𝙶𝙴™]🔥",
+"➣ [™𝙲𝙾𝙼𝙱𝙾 𝙱𝙸𝙲𝙰𝙽𝙷™]💨",
 "[𝙴𝚇𝙸𝚃]"
 }, nil,"❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n🎮G𝙰𝙼𝙴: 𝙳𝙷𝙲𝙷 𝙰𝙻𝙻\n💭V𝙴𝚁𝚂𝙸𝙾𝙽: 1.00 - 2.99 \n-------------------------------------------")
 
@@ -29,7 +30,8 @@ if HNHH == 2 then VipVip() end
 if HNHH == 3 then SkillVip() end
 if HNHH == 4 then SpeedX2() end
 if HNHH == 5 then HackDamage() end
-if HNHH == 6 then EXITALL() end
+if HNHH == 6 then Combo() end
+if HNHH == 7 then EXITALL() end
 
 end
 HVH = -1
@@ -53,7 +55,7 @@ gg.refineNumber("0~300",4)
 gg.getResults(99999)
 gg.editAll(input[1],4)
 gg.clearResults()
-gg.alert('✅𝙷𝙰𝙲𝙺 𝚃𝙸𝙼𝙴✅')
+gg.toast('✅𝙷𝙰𝙲𝙺 𝚃𝙸𝙼𝙴✅')
 end
 
 
@@ -120,7 +122,7 @@ gg.refineNumber("1",4)
 gg.getResults(99999)
 gg.editAll(8,4)
 gg.clearResults()
-gg.alert('✅𝚂𝙺𝙸𝙻𝙻✅')
+gg.toast('✅𝚂𝙺𝙸𝙻𝙻✅')
 end
 
 function OFFSkill()
@@ -132,7 +134,7 @@ gg.refineNumber("8",4)
 gg.getResults(99999)
 gg.editAll(1,4)
 gg.clearResults()
-gg.alert('❌𝚂𝙺𝙸𝙻𝙻❌')
+gg.toast('❌𝚂𝙺𝙸𝙻𝙻❌')
 end
 
 
@@ -285,9 +287,9 @@ Type = 4
 Field() 
 gg.refineNumber(input[1],4)
 gg.getResults(99999)
-gg.editAll(5060902,4)
+gg.editAll(2560902,4)
 gg.clearResults()
-gg.alert('✅𝙷𝙰𝙲𝙺 𝙳𝙰𝙼𝙰𝙶𝙴✅')
+gg.toast('✅𝙷𝙰𝙲𝙺 𝙳𝙰𝙼𝙰𝙶𝙴✅')
 end
 
 function ClearHackDamage()
@@ -296,16 +298,27 @@ local input = gg.prompt(
 	{[1] = "☛☚"},
 	{[1] = 'number'})
 if input == nil then gg.toast("🔥Đᴀ̃ Hᴜ̉ʏ🔥") HackDamage() MenuBattle() os.exit() end			
-gg.searchNumber(5060902,4)
+gg.searchNumber(2560902,4)
 gg.getResults(99999)
 gg.editAll(input[1],4)
 gg.clearResults()
-gg.alert('❌𝙷𝙰𝙲𝙺 𝙳𝙰𝙼𝙰𝙶𝙴❌')
+gg.toast('❌𝙷𝙰𝙲𝙺 𝙳𝙰𝙼𝙰𝙶𝙴❌')
 end
 
 
 
 
+
+function Combo()
+Class = "BaizhanSecretScoreDataMgr"
+Offset = 0x38 
+Type = 4 
+Field() 
+gg.getResults(99999)
+gg.editAll(1500,4)
+gg.clearResults()
+gg.toast('✅𝙲𝙾𝙼𝙱𝙾✅')
+end
 
 
 
