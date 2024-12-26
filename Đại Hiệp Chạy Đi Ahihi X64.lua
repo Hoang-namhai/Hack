@@ -317,7 +317,16 @@ Offset = 0x38
 Type = 4 
 Field() 
 gg.getResults(99999)
-gg.editAll(1500,4)
+revert = gg.getResults(8888)
+local t = gg.getResults(8888)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_DWORD then
+		v.value = "1500"
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
 gg.clearResults()
 gg.toast('✅𝙲𝙾𝙼𝙱𝙾✅')
 end
