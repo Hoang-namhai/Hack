@@ -6,7 +6,7 @@ end
 
 gg.sleep(100) 
 gg.getTargetInfo()
-gg.alert("𝙶𝙰𝙼𝙴 𝙽𝙰𝙼𝙴 : 𝙳𝙷𝙲𝙳 𝙰𝙷𝙸𝙷𝙸\n𝚂𝙲𝚁𝙸𝙿𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : Vip\n𝙻𝙰𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴 : 09/12/2024\nMᴀᴅᴇ Bʏ Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ\nSᴄʀɪᴘᴛ Pᴜʙʟɪsʜᴇᴅ ɪɴ ©2024", "[𝙽𝙴𝚇𝚃]")
+gg.alert("𝙶𝙰𝙼𝙴 𝙽𝙰𝙼𝙴 : 𝙳𝙷𝙲𝙳 𝙰𝙻𝙻\n𝚂𝙲𝚁𝙸𝙿𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : Vip\n𝙻𝙰𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴 : 26/12/2024\nMᴀᴅᴇ Bʏ Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ\nSᴄʀɪᴘᴛ Pᴜʙʟɪsʜᴇᴅ ɪɴ ©2024", "[𝙽𝙴𝚇𝚃]")
 gg.sleep(50)
 gg.sleep(50)
 
@@ -21,6 +21,7 @@ local HNHH = gg.choice({
 "➣ [™𝚂𝙿𝙴𝙴𝙳 𝚇𝟸™]💦",
 "➣ [™𝙷𝙰𝙲𝙺 𝙳𝙰𝙼𝙰𝙶𝙴™]🔥",
 "➣ [™𝙲𝙾𝙼𝙱𝙾 𝙱𝙸𝙲𝙰𝙽𝙷™]💨",
+"➣ [™𝙽𝙶𝚄 𝙲𝙰 𝙳𝙰𝙼™]💢",
 "[𝙴𝚇𝙸𝚃]"
 }, nil,"❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n🎮G𝙰𝙼𝙴: 𝙳𝙷𝙲𝙷 𝙰𝙻𝙻\n💭V𝙴𝚁𝚂𝙸𝙾𝙽: 1.00 - 2.99 \n-------------------------------------------")
 
@@ -31,7 +32,8 @@ if HNHH == 3 then SkillVip() end
 if HNHH == 4 then SpeedX2() end
 if HNHH == 5 then HackDamage() end
 if HNHH == 6 then Combo() end
-if HNHH == 7 then EXITALL() end
+if HNHH == 7 then NguCaDam() end
+if HNHH == 8 then EXITALL() end
 
 end
 HVH = -1
@@ -320,6 +322,33 @@ gg.clearResults()
 gg.toast('✅𝙲𝙾𝙼𝙱𝙾✅')
 end
 
+
+
+
+
+function NguCaDam()
+local input = gg.prompt(
+	{"♥Ytb :: Hải Script🍀\n\nValue♛:"},
+{[1] = "LVL1;   LVL2;   LVL3;   LVL4;       \n 6619252;3014771;6422625:113"})
+if input == nil then gg.toast("🔥Đᴀ̃ Hᴜ̉ʏ🔥") os.exit() end
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber(input[1],gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.processResume()
+gg.refineNumber("1~59", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.processResume()
+revert = gg.getResults(8888)
+local t = gg.getResults(8888)
+for i, v in ipairs(t) do
+	if v.flags == gg.TYPE_DWORD then
+		v.value = "60"
+		v.freeze = true
+	end
+end
+gg.addListItems(t)
+t = nil
+gg.clearResults()
+gg.toast('✅𝙽𝙶𝚄 𝙲𝙰 𝙳𝙰𝙼✅')
+end
 
 
 
