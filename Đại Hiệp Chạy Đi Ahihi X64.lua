@@ -349,7 +349,7 @@ revert = gg.getResults(8888)
 local t = gg.getResults(8888)
 for i, v in ipairs(t) do
 	if v.flags == gg.TYPE_DWORD then
-		v.value = "90"
+		v.value = "80"
 		v.freeze = true
 	end
 end
