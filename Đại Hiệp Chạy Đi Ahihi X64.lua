@@ -289,7 +289,7 @@ Type = 4
 Field() 
 gg.refineNumber(input[1],4)
 gg.getResults(99999)
-gg.editAll(2560902,4)
+gg.editAll(50060902,4)
 gg.clearResults()
 gg.toast('✅𝙷𝙰𝙲𝙺 𝙳𝙰𝙼𝙰𝙶𝙴✅')
 end
@@ -300,7 +300,7 @@ local input = gg.prompt(
 	{[1] = "☛☚"},
 	{[1] = 'number'})
 if input == nil then gg.toast("🔥Đᴀ̃ Hᴜ̉ʏ🔥") HackDamage() MenuBattle() os.exit() end			
-gg.searchNumber(2560902,4)
+gg.searchNumber(50060902,4)
 gg.getResults(99999)
 gg.editAll(input[1],4)
 gg.clearResults()
@@ -349,7 +349,7 @@ revert = gg.getResults(8888)
 local t = gg.getResults(8888)
 for i, v in ipairs(t) do
 	if v.flags == gg.TYPE_DWORD then
-		v.value = "60"
+		v.value = "90"
 		v.freeze = true
 	end
 end
