@@ -9,7 +9,7 @@ end
 
 gg.sleep(100) 
 gg.getTargetInfo()
-gg.alert("𝙶𝙰𝙼𝙴 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 3.3.5\n𝙶𝙰𝙼𝙴 𝙽𝙰𝙼𝙴 : 𝚁𝚎𝚊𝚕𝚖 𝙳𝚎𝚏𝚎𝚗𝚜𝚎\n𝚂𝙲𝚁𝙸𝙿𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 1.0 Vip\n𝙻𝙰𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴 : 02/12/2024\nMᴀᴅᴇ Bʏ Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ\nSᴄʀɪᴘᴛ Pᴜʙʟɪsʜᴇᴅ ɪɴ ©2024", "[𝙽𝙴𝚇𝚃]")
+gg.alert("𝙶𝙰𝙼𝙴 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 3.3.14\n𝙶𝙰𝙼𝙴 𝙽𝙰𝙼𝙴 : 𝚁𝚎𝚊𝚕𝚖 𝙳𝚎𝚏𝚎𝚗𝚜𝚎\n𝚂𝙲𝚁𝙸𝙿𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 1.1 Vip\n𝙻𝙰𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴 : 05/05/2025\nMᴀᴅᴇ Bʏ Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ\nSᴄʀɪᴘᴛ Pᴜʙʟɪsʜᴇᴅ ɪɴ ©2025", "[𝙽𝙴𝚇𝚃]")
 gg.sleep(50)
 gg.sleep(50)
 
@@ -56,19 +56,19 @@ function OnDamageAll()
 iTzMeCoder=gg.getRangesList('libil2cpp.so')[3].start
 iTzMe=nil  iTzMe={}
 iTzMe[1]={}
-iTzMe[1].address=iTzMeCoder+0x36329C+0
+iTzMe[1].address=iTzMeCoder+0x363434+0
 iTzMe[1].value='128250C0h'
 iTzMe[1].flags=4
 iTzMe[2]={}
-iTzMe[2].address=iTzMeCoder+0x36329C+4
+iTzMe[2].address=iTzMeCoder+0x363434+4
 iTzMe[2].value='72A9CA60h'
 iTzMe[2].flags=4
 iTzMe[3]={}
-iTzMe[3].address=iTzMeCoder+0x36329C+8
+iTzMe[3].address=iTzMeCoder+0x363434+8
 iTzMe[3].value='1E270000h'
 iTzMe[3].flags=4
 iTzMe[4]={}
-iTzMe[4].address=iTzMeCoder+0x36329C+12
+iTzMe[4].address=iTzMeCoder+0x363434+12
 iTzMe[4].value='D65F03C0h'
 iTzMe[4].flags=4
 gg.setValues(iTzMe)
@@ -81,19 +81,19 @@ function OffDamageAll()
 iTzMeCoder=gg.getRangesList('libil2cpp.so')[3].start
 iTzMe=nil  iTzMe={}
 iTzMe[1]={}
-iTzMe[1].address=iTzMeCoder+0x36329C+0
+iTzMe[1].address=iTzMeCoder+0x363434+0
 iTzMe[1].value='F81F0FFEh'
 iTzMe[1].flags=4
 iTzMe[2]={}
-iTzMe[2].address=iTzMeCoder+0x36329C+4
+iTzMe[2].address=iTzMeCoder+0x363434+4
 iTzMe[2].value='F9406C08h'
 iTzMe[2].flags=4
 iTzMe[3]={}
-iTzMe[3].address=iTzMeCoder+0x36329C+8
+iTzMe[3].address=iTzMeCoder+0x363434+8
 iTzMe[3].value='B4000188h'
 iTzMe[3].flags=4
 iTzMe[4]={}
-iTzMe[4].address=iTzMeCoder+0x36329C+12
+iTzMe[4].address=iTzMeCoder+0x363434+12
 iTzMe[4].value='2D428102h'
 iTzMe[4].flags=4
 gg.setValues(iTzMe)
@@ -122,19 +122,19 @@ function OnSpamAttack()
 iTzMeCoder=gg.getRangesList('libil2cpp.so')[3].start
 iTzMe=nil  iTzMe={}
 iTzMe[1]={}
-iTzMe[1].address=iTzMeCoder+0X3620E4+0
+iTzMe[1].address=iTzMeCoder+0x3622D4+0
 iTzMe[1].value='128EA700h'
 iTzMe[1].flags=4
 iTzMe[2]={}
-iTzMe[2].address=iTzMeCoder+0X3620E4+4
+iTzMe[2].address=iTzMeCoder+0x3622D4+4
 iTzMe[2].value='72A99520h'
 iTzMe[2].flags=4
 iTzMe[3]={}
-iTzMe[3].address=iTzMeCoder+0X3620E4+8
+iTzMe[3].address=iTzMeCoder+0x3622D4+8
 iTzMe[3].value='1E270000h'
 iTzMe[3].flags=4
 iTzMe[4]={}
-iTzMe[4].address=iTzMeCoder+0X3620E4+12
+iTzMe[4].address=iTzMeCoder+0x3622D4+12
 iTzMe[4].value='D65F03C0h'
 iTzMe[4].flags=4
 gg.setValues(iTzMe)
@@ -148,19 +148,19 @@ function OffSpamAttack()
 iTzMeCoder=gg.getRangesList('libil2cpp.so')[3].start
 iTzMe=nil  iTzMe={}
 iTzMe[1]={}
-iTzMe[1].address=iTzMeCoder+0X3620E4+0
+iTzMe[1].address=iTzMeCoder+0x3622D4+0
 iTzMe[1].value='F81F0FFEh'
 iTzMe[1].flags=4
 iTzMe[2]={}
-iTzMe[2].address=iTzMeCoder+0X3620E4+4
+iTzMe[2].address=iTzMeCoder+0x3622D4+4
 iTzMe[2].value='F9405808h'
 iTzMe[2].flags=4
 iTzMe[3]={}
-iTzMe[3].address=iTzMeCoder+0X3620E4+8
+iTzMe[3].address=iTzMeCoder+0x3622D4+8
 iTzMe[3].value='B4000188h'
 iTzMe[3].flags=4
 iTzMe[4]={}
-iTzMe[4].address=iTzMeCoder+0X3620E4+12
+iTzMe[4].address=iTzMeCoder+0x3622D4+12
 iTzMe[4].value='2D428102h'
 iTzMe[4].flags=4
 gg.setValues(iTzMe)
@@ -191,19 +191,19 @@ function OnAttackSpeed()
 iTzMeCoder=gg.getRangesList('libil2cpp.so')[3].start
 iTzMe=nil  iTzMe={}
 iTzMe[1]={}
-iTzMe[1].address=iTzMeCoder+0X36451C+0
+iTzMe[1].address=iTzMeCoder+0x36470C+0
 iTzMe[1].value='52800000h'
 iTzMe[1].flags=4
 iTzMe[2]={}
-iTzMe[2].address=iTzMeCoder+0X36451C+4
+iTzMe[2].address=iTzMeCoder+0x36470C+4
 iTzMe[2].value='72A83400h'
 iTzMe[2].flags=4
 iTzMe[3]={}
-iTzMe[3].address=iTzMeCoder+0X36451C+8
+iTzMe[3].address=iTzMeCoder+0x36470C+8
 iTzMe[3].value='1E270000h'
 iTzMe[3].flags=4
 iTzMe[4]={}
-iTzMe[4].address=iTzMeCoder+0X36451C+12
+iTzMe[4].address=iTzMeCoder+0x36470C+12
 iTzMe[4].value='D65F03C0h'
 iTzMe[4].flags=4
 gg.setValues(iTzMe)
@@ -216,19 +216,19 @@ function OffAttackSpeed()
 iTzMeCoder=gg.getRangesList('libil2cpp.so')[3].start
 iTzMe=nil  iTzMe={}
 iTzMe[1]={}
-iTzMe[1].address=iTzMeCoder+0X36451C+0
+iTzMe[1].address=iTzMeCoder+0x36470C+0
 iTzMe[1].value='F81F0FFEh'
 iTzMe[1].flags=4
 iTzMe[2]={}
-iTzMe[2].address=iTzMeCoder+0X36451C+4
+iTzMe[2].address=iTzMeCoder+0x36470C+4
 iTzMe[2].value='F9405C08h'
 iTzMe[2].flags=4
 iTzMe[3]={}
-iTzMe[3].address=iTzMeCoder+0X36451C+8
+iTzMe[3].address=iTzMeCoder+0x36470C+8
 iTzMe[3].value='B4000188h'
 iTzMe[3].flags=4
 iTzMe[4]={}
-iTzMe[4].address=iTzMeCoder+0X36451C+12
+iTzMe[4].address=iTzMeCoder+0x36470C+12
 iTzMe[4].value='2D428102h'
 iTzMe[4].flags=4
 gg.setValues(iTzMe)
