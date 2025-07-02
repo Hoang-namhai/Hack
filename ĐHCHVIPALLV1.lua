@@ -16,9 +16,10 @@ HDR = "❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n🎮G𝙰𝙼𝙴:
 
 function Menu()
 local menu=gg.choice({
-"Damage Bất Tử [ Trận ]",
-"Skill Vip [ Trận ]",
+"Damage Vip [ Trận ]",
+"Damage V2 [ ALL ]",
 "Time Vip [ Trận ]",
+"Skill Vip [ Trận ]",
 "Bí Cảnh [ Trận ]",
 "Speed X2 [ Sảnh ]",
 "☛Zalo ADMIN☚",
@@ -31,7 +32,8 @@ if menu==3 then F3() end
 if menu==4 then F4() end
 if menu==5 then F5() end
 if menu==6 then F6() end
-if menu==7 then os.exit() end
+if menu==7 then F7() end
+if menu==8 then os.exit() end
 --❏━━━━━━━━━━━━━━❒
 end
 SMZ=-1
@@ -50,8 +52,6 @@ X="2~999999" refine()
 check() if E==0 then error() return end
 X=-1 edit() clear()
 
-
-
 clear() X="MonsterCfg" O=0x40 T=4 class()
 X="2~999999" refine()
 check() if E==0 then error() return end
@@ -60,13 +60,73 @@ gg.toast('✅Damage Bất Tử✅')
 end
 
 
+function F2()
+local HNHH = gg.alert('❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n--------------------------------------------\n\n➣ 𝙵𝚄𝙽𝙲𝚃𝙸𝙾𝙽 𝙼𝙾𝙳:\n[™Damage Leo Tháp™]💦\n\n➣ Lưu Ý:\n➣ Chức Năng Bật Trong Trận Hay Sảnh Đều Được.\n➣ Chỉ Cần Bật 1 Lần Duy Nhất Là Sài Mãi Nhé, Không Cần Bật Lại Nhiều.\n➣ Nếu Không Muốn Sài Thì Ấn OFF Để Tắt Nhé.', '[🔰ON🔰]', '[🔰OFF🔰]')
+if HNHH == nil then return 
+else
+if HNHH == 1 then ONHACK() end
+if HNHH == 2 then OFFHACK() end
+end
+::ni::
+end
 
+
+
+function ONHACK()
+iTzMeCoder=gg.getRangesList('libil2cpp.so')[2].start
+iTzMe=nil  iTzMe={}
+iTzMe[1]={}
+iTzMe[1].address=iTzMeCoder+0x19d0370+0
+iTzMe[1].value='529FFFE0h'
+iTzMe[1].flags=4
+iTzMe[2]={}
+iTzMe[2].address=iTzMeCoder+0x19d0370+4
+iTzMe[2].value='72AFFFE0h'
+iTzMe[2].flags=4
+iTzMe[3]={}
+iTzMe[3].address=iTzMeCoder+0x19d0370+8
+iTzMe[3].value='D65F03C0h'
+iTzMe[3].flags=4
+gg.setValues(iTzMe)
+gg.alert("✅DAMAGE V2✅")
+end
 
     
-function F2()
---public class WeaponSettings.Data
---public int MaxAmmoInClip; // 0x1C
---public int MaxAmmoInWeapon; // 0x20
+    
+function OFFHACK()
+iTzMeCoder=gg.getRangesList('libil2cpp.so')[2].start
+iTzMe=nil  iTzMe={}
+iTzMe[1]={}
+iTzMe[1].address=iTzMeCoder+0x19d0370+0
+iTzMe[1].value='F81C0FF7h'
+iTzMe[1].flags=4
+iTzMe[2]={}
+iTzMe[2].address=iTzMeCoder+0x19d0370+4
+iTzMe[2].value='A90157F6h'
+iTzMe[2].flags=4
+iTzMe[3]={}
+iTzMe[3].address=iTzMeCoder+0x19d0370+8
+iTzMe[3].value='A9024FF4h'
+iTzMe[3].flags=4
+gg.setValues(iTzMe)
+gg.alert("❌DAMAGE V2❌")
+end    
+    
+    
+
+
+function F3()
+clear() X="LevelMonsterMgr" O=0x54 T=4 class()
+X="1~300" refine()
+check() if E==0 then error() return end
+X=800 edit() clear()
+gg.toast('✅Time✅')
+end
+
+
+
+
+function F4()
 clear() X="SkillRuleEventSelectRandomEnemy" O=0x3C T=4 class()
 X="1" refine()
 check() if E==0 then error() return end
@@ -126,19 +186,13 @@ clear()
 gg.toast('✅Skill✅')
 end
 
-function F3()
---public class WeaponSettings.Data
---public float FireTime; // 0x28
-clear() X="LevelMonsterMgr" O=0x54 T=4 class()
-X="1~300" refine()
-check() if E==0 then error() return end
-X=800 edit() clear()
-gg.toast('✅Time✅')
-end
 
-function F4()
---public class WeaponSettings.Data
---public float FireTime; // 0x28
+
+
+
+
+
+function F5()
 clear() X="BaizhanSecretScoreDataMgr" O=0x38 T=4 class()
 check() if E==0 then error() return end
 gg.getResults(99999)
@@ -157,8 +211,8 @@ gg.toast('✅𝙲𝙾𝙼𝙱𝙾✅') clear()
 end
 
 
-function F5()
-local HNH2 = gg.alert('❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n--------------------------------------------\n\n➣ 𝙵𝚄𝙽𝙲𝚃𝙸𝙾𝙽 𝙼𝙾𝙳:\n[™𝚂𝙿𝙴𝙴𝙳 𝚇𝟸™]💦\n\n➣ Lưu Ý:\n➣ Chức Năng Bật Trong Trận Hay Sảnh Đều Được.\n➣ Nhớ Là Phải Bật Chức Năng Speed Sau Nhất Nhé.', '[𝙰𝙲𝚃𝙸𝚅𝙰𝚃𝙴]', '[𝚁𝙴𝚂𝙴𝚃]')
+function F6()
+local HNH2 = gg.alert('❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n--------------------------------------------\n\n➣ 𝙵𝚄𝙽𝙲𝚃𝙸𝙾𝙽 𝙼𝙾𝙳:\n[™𝚂𝙿𝙴𝙴𝙳 𝚇𝟸™]💦\n\n➣ Lưu Ý:\n➣ Chức Năng Bật Trong Trận Hay Sảnh Đều Được.\n➣ Nhớ Là Phải Bật Chức Năng Speed Sau Nhất Nhé.', '[🔰ON🔰]', '[🔰OFF🔰]')
 if HNH2 == nil then return 
 else
 if HNH2 == 1 then ONSpeed() end
@@ -279,7 +333,7 @@ end
 
 
 
-function F6()
+function F7()
 gg.copyText("0375574755")
 gg.alert("🚫Đã Copy Sdt Admin🚫\n\nHãy Vào Zalo Dán Vào Ô Tìm Kiếm Để Liên Hệ Với Admin.\n\nXin Cảm Ơn!🇻🇳")
 end
