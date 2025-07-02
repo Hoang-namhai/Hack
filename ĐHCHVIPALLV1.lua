@@ -6,7 +6,7 @@ end
 
 gg.sleep(100) 
 gg.getTargetInfo()
-gg.alert("𝙶𝙰𝙼𝙴 𝙽𝙰𝙼𝙴 : 𝙳𝙷𝙲𝙳 𝙰𝙻𝙻\n𝚂𝙲𝚁𝙸𝙿𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : Vip\n𝙻𝙰𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴 : 13/04/2025\nMᴀᴅᴇ Bʏ Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ\nSᴄʀɪᴘᴛ Pᴜʙʟɪsʜᴇᴅ ɪɴ ©2025", "[𝙽𝙴𝚇𝚃]")
+gg.alert("𝙶𝙰𝙼𝙴 𝙽𝙰𝙼𝙴 : 𝙳𝙷𝙲𝙳 𝙰𝙻𝙻\n𝚂𝙲𝚁𝙸𝙿𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : Vip\n𝙻𝙰𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴 : 02/07/2025\nMᴀᴅᴇ Bʏ Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ\nSᴄʀɪᴘᴛ Pᴜʙʟɪsʜᴇᴅ ɪɴ ©2025", "[𝙽𝙴𝚇𝚃]")
 gg.sleep(50)
 gg.sleep(50)
 
@@ -16,11 +16,12 @@ HDR = "❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n🎮G𝙰𝙼𝙴:
 
 function Menu()
 local menu=gg.choice({
-"Damage Bất Tử [ Load ]",
+"Damage Bất Tử [ Trận ]",
 "Skill Vip [ Trận ]",
 "Time Vip [ Trận ]",
 "Bí Cảnh [ Trận ]",
 "Speed X2 [ Sảnh ]",
+"☛Zalo ADMIN☚",
 "Exit",
 },nil,HDR)
 if menu==nil then else
@@ -29,7 +30,8 @@ if menu==2 then F2() end
 if menu==3 then F3() end
 if menu==4 then F4() end
 if menu==5 then F5() end
-if menu==6 then os.exit() end
+if menu==6 then F6() end
+if menu==7 then os.exit() end
 --❏━━━━━━━━━━━━━━❒
 end
 SMZ=-1
@@ -47,6 +49,8 @@ clear() X="MonsterCfg" O=0x30 T=4 class()
 X="2~999999" refine()
 check() if E==0 then error() return end
 X=-1 edit() clear()
+
+
 
 clear() X="MonsterCfg" O=0x40 T=4 class()
 X="2~999999" refine()
@@ -271,6 +275,25 @@ gg.clearResults()
 gg.alert('❌𝚂𝙿𝙴𝙴𝙳 𝚇𝟸❌')
 end
 end
+
+
+
+
+function F6()
+gg.copyText("0375574755")
+gg.alert("🚫Đã Copy Sdt Admin🚫\n\nHãy Vào Zalo Dán Vào Ô Tìm Kiếm Để Liên Hệ Với Admin.\n\nXin Cảm Ơn!🇻🇳")
+end
+
+
+
+
+
+
+
+
+
+
+
 
 --❏━━━━━━━━━━━━━━❒
 function clear()
