@@ -1,4 +1,4 @@
-
+gg.alert("Sắp Hết Hạn Vui Lòng Ra Hạn Tiếp Để Sử Dụng")
 function Main()
 menu = gg.multiChoice({
 A .."", 
