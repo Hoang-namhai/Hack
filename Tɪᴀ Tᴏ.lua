@@ -1,3 +1,5 @@
+gg.alert("Hack Mod Sẽ Hết Hạn Vào 30/04/2026")
+gg.alert("Vui Lòng Thanh Toán Nốt Để Dùng Vĩnh Viễn Nhé")
 function Main()
 menu = gg.multiChoice({
 A .."", 
