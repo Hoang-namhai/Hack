@@ -9,14 +9,14 @@ end
 
 gg.sleep(100) 
 gg.getTargetInfo()
-gg.alert("𝙶𝙰𝙼𝙴 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 2.1.79\n𝙶𝙰𝙼𝙴 𝙽𝙰𝙼𝙴 : K𝙸𝙽𝙶𝙳𝙾𝙼 𝚆𝙰𝚁 𝚃𝙳\n𝚂𝙲𝚁𝙸𝙿𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 1.2 Vip\n𝙻𝙰𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴 : 01/12/2024\nMᴀᴅᴇ Bʏ Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ\nSᴄʀɪᴘᴛ Pᴜʙʟɪsʜᴇᴅ ɪɴ ©2024", "[𝙽𝙴𝚇𝚃]")
+gg.alert("𝙶𝙰𝙼𝙴 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 2.5.00\n𝙶𝙰𝙼𝙴 𝙽𝙰𝙼𝙴 : K𝙸𝙽𝙶𝙳𝙾𝙼 𝚆𝙰𝚁 𝚃𝙳\n𝚂𝙲𝚁𝙸𝙿𝚃 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : 1.3 Vip\n𝙻𝙰𝚂𝚃 𝚄𝙿𝙳𝙰𝚃𝙴 : 21/04/2026\nMᴀᴅᴇ Bʏ Hᴏᴀ̀ɴɢ Nᴀᴍ Hᴀ̉ɪ\nSᴄʀɪᴘᴛ Pᴜʙʟɪsʜᴇᴅ ɪɴ ©2026", "[𝙽𝙴𝚇𝚃]")
 gg.sleep(50)
 gg.sleep(50)
 
 
 
 
-gg.alert("- Lưu ý: Bật Hack Xong Mọi Người Vào Shop Thể Lực Và Ấn Mua Gói Thể Lực Cuối Có 30 Chiếc Giày. Để Kích Hoạt Thành Công Nhé🎉...\n\n- Note: After turning on Hack, everyone goes to the Fitness Shop and clicks Buy First Fitness Package with 30 Shoes. For Successful Activation🎉...")
+gg.alert("- Lưu ý: Bật Hack Xong Mọi Người Vào Shop Thể Lực Và Ấn Mua Gói Thể Lực Cuối Có 30 Chiếc Giày. Để Kích Hoạt Thành Công Nhé🎉...\n\n- Note: After enabling the hack, everyone should go to the Stamina Shop and purchase the final Stamina Pack which contains 30 pairs of shoes. This is to successfully activate the hack! 🎉")
 
 
 
@@ -31,7 +31,7 @@ function Main()
 HNHH = gg.multiChoice({
 "➣ 𝙵𝚁𝙴𝙴 𝚂𝙷𝙾𝙿 𝙰𝙻𝙻💢",
 "[𝙴𝚇𝙸𝚃]"
-}, nil,"❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n🎮G𝙰𝙼𝙴: K𝙸𝙽𝙶𝙳𝙾𝙼 𝚆𝙰𝚁 𝚃𝙳\n⛪𝙽𝙿𝙷: 𝙾𝙽𝙳𝙸 𝚃𝙴𝙲𝙷𝙽𝙾𝙻𝙾𝙶𝚈 𝙹𝚂𝙲\n💭V𝙴𝚁𝚂𝙸𝙾𝙽: 2.1.79 \n------------------------------------------------")
+}, nil,"❤Yᴏᴜᴛᴜʙᴇ :: ʜᴀ̉ɪ sᴄʀɪᴘᴛ🍀\n🎮G𝙰𝙼𝙴: K𝙸𝙽𝙶𝙳𝙾𝙼 𝚆𝙰𝚁 𝚃𝙳\n⛪𝙽𝙿𝙷: 𝙾𝙽𝙳𝙸 𝚃𝙴𝙲𝙷𝙽𝙾𝙻𝙾𝙶𝚈 𝙹𝚂𝙲\n💭V𝙴𝚁𝚂𝙸𝙾𝙽: 2.5.00 \n------------------------------------------------")
 if HNHH == nil then
 else
 if HNHH[1] == true then FreeShop() end
